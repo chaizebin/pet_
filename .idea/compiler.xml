@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="common" />
         <module name="eureka" />
+        <module name="pet_" />
         <module name="springcloud_pet" />
       </profile>
     </annotationProcessing>

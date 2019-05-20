@@ -10,6 +10,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/eureka/pom.xml" />
         <option value="$PROJECT_DIR$/common/pom.xml" />
+        <option value="$PROJECT_DIR$/huoti-feign-ys/pom.xml" />
+        <option value="$PROJECT_DIR$/huoti-provider-ys/pom.xml" />
       </list>
     </option>
   </component>

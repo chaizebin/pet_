@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="common" />
         <module name="eureka" />
+        <module name="pet-api" />
         <module name="pet-producers" />
         <module name="pet-web" />
         <module name="pet_" />

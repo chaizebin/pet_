@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/common/pom.xml" />
         <option value="$PROJECT_DIR$/pet-producers/pom.xml" />
         <option value="$PROJECT_DIR$/pet-web/pom.xml" />
+        <option value="$PROJECT_DIR$/pet-api/pom.xml" />
       </list>
     </option>
   </component>

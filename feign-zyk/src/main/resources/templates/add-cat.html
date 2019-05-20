@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    $(function () {
+        queryRegion("provinceId",0);
+    })
+</script>
+<body>
+<form id="catForm" class="text-right">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="catName">商品名称:</label>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <input type="hidden" name="catId" id="catId">
+            <input type="text" class="form-control" name="catName" id="catName" placeholder="请输入商品名称...">
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="catPrice">商品价格:</label>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <input type="text" class="form-control" name="catPrice" id="catPrice" placeholder="请输入商品价格...">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="falseId">是否包邮:</label>
+            </div>
+        </div>
+        <div class="col-md-4" style="text-align: left">
+            <input type="radio" name="baoYou" id="falseId" value="是">是
+            <input type="radio" name="baoYou" value="否" id="trueId">否
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="xiaoLiang">商品销量:</label>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <input type="text" class="form-control" name="xiaoLiang" id="xiaoLiang" placeholder="请输入商品销量...">
+        </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="kuCun">商品库存:</label>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <input type="text" class="form-control" name="kuCun" id="kuCun">
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="faHuoDi">发货地:</label>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <input type="text" class="form-control" name="faHuoDi" id="faHuoDi">
+        </div>
+    </div>
+</form>
+
+</body>
+</html>

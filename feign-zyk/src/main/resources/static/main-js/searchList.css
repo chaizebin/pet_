@@ -1,0 +1,13 @@
+.list-main-wrap .hot span{ padding: 0px;}
+.list-main-wrap .hot h3 span{ padding: 0px 5px;}
+.hot li { width:142px; padding: 6px 6px 9px 6px;  margin-bottom: 10px; float:left; border: 1px solid #e8e8e8; background: #fff;}
+
+.hot .djtjT_list li a{ width:142px; height:142px; overflow: hidden; display: block;}
+.hot .djtjT_list  li p{ line-height: 17px;font-size: 14px; color: #252525; margin-top: 9px;}
+.hot .djtjT_list  li.nm{ margin-right: 0;}
+
+.hot .djtjT_list .djtjT_wrap{height:20px; margin-top: 8px;display: block; position: relative; line-height:20px;}
+.hot .djtjT_list .price{ position: absolute; font-size:14px; color: #e60012; left: 0; display: block; }
+.hot .djtjT_list .listBtn{ position: absolute; cursor: pointer;  right:2px; cursor:pointer; border-radius:1px;width:68px; height:18px; line-height: 18px; text-align: center; font-size: 11px; color: #252525; background:#f8f8f8; border: 1px solid #eeeeee;}
+.choice .searchEnd{ height: 30px; line-height: 30px; float: left; padding-right: 5px;}
+.choice  .searchEnd span{color: #ff5500; font-size: 21px;}

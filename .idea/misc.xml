@@ -10,6 +10,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/eureka/pom.xml" />
         <option value="$PROJECT_DIR$/common/pom.xml" />
+        <option value="$PROJECT_DIR$/provider-zyk/pom.xml" />
+        <option value="$PROJECT_DIR$/feign-zyk/pom.xml" />
       </list>
     </option>
   </component>

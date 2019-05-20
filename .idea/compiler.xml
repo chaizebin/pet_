@@ -7,8 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="common" />
-        <module name="eureka" />
+        <module name="service-api" />
         <module name="springcloud_pet" />
+        <module name="eureka" />
+        <module name="provider-zyk" />
+        <module name="feign-zyk" />
       </profile>
     </annotationProcessing>
   </component>
@@ -16,6 +19,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="common" options="-parameters" />
       <module name="eureka" options="-parameters" />
+      <module name="feign-zyk" options="-parameters" />
+      <module name="provider-zyk" options="-parameters" />
     </option>
   </component>
 </project>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jk.mapper.HuotiMapper" >
+
+    <select id = "selectHuoti" resultType="com.jk.model.HuotiBean">
+  select
+      count(1) from
+        t_huoti
+          from t_huoti t
+              left join t_area ta1 on t.province=ta1.id
+              left join t_area ta2 on t.city=ta2.id
+        <include refid="huotiWhere"></include>
+    </select>
+
+
+
+
+
+
+   <select id="selectHuotiList"  resultType="com.jk.model.HuotiBean">
+  select
+      t.id,
+      t.name,
+      t.price,
+			t.baoyou,
+			t.kucun,
+			t.xiaoliang,
+      ta1.name as provinceName,
+      ta2.name as cityName
+          from t_huoti t
+              left join t_area ta1 on t.province=ta1.id
+              left join t_area ta2 on t.city=ta2.id
+       <include refid="huotiWhere"></include>
+       limit  #{start},#{rows}
+   </select>
+
+   <select id="queryHuotiTotal"  resultType="long">
+       select count(*) from t_huoti t where 1=1
+       <include refid="huotiWhere"></include>
+   </select>
+
+    <delete id="deleteHuotiById" >
+        delete FROM  t_huoti where id =#{id}
+    </delete>
+    <delete id="delAllHuoti">
+        delete from t_huoti  where id IN
+        <foreach collection="array" open="(" close=")" item="huotiIds" index="index" separator=",">
+            #{huotiIds}
+        </foreach>
+    </delete>
+
+ <!-- <select id="selectHuotiById" resultType="com.jk.model.HuotiBean" parameterType="Integer">
+        select * from  t_huoti where id=#{id}
+    </select>-->
+
+
+    <!--回显-->
+
+    <select id="selectHuotiById" parameterType="int" resultType="com.jk.model.HuotiBean">
+
+    select t.id,t.name,t.price,t.baoyou,t.city,t.xiaoliang,t.kucun,t.province from t_huoti s where t.id=#{id}
+
+    </select>
+
+
+    <!--修改-->
+    <update id="updateHuoti" parameterType="com.jk.model.HuotiBean">
+        update t_huoti set name=#{name},price=#{price},baoyou=#{baoyou},city=#{city},xiaoliang=#{xiaoliang},kucun=#{kucun},province=#{province} where id=#{id}
+    </update>
+
+    <!--新增-->
+    <insert id="saveHuoti" parameterType="com.jk.model.HuotiBean">
+     insert into t_huoti(name,price,baoyou,city,province,xiaoliang,kucun) values(#{name},#{price},#{baoyou},#{city},#{province},#{xiaoliang},#{kucun})
+    </insert>
+
+
+
+
+
+
+
+    <sql id="huotiWhere">
+        <if test="huotiBean.startprice!=null and huotiBean.startprice!=''">
+            and t.price >= #{huotiBean.startprice,jdbcType=NUMERIC}
+        </if>
+        <if test="huotiBean.endprice!=null and huotiBean.endprice!=''">
+            and t.price &lt;= #{huotiBean.endprice,jdbcType=NUMERIC}
+        </if>
+        <if test="huotiBean.name!=null and huotiBean.name!=''">
+            and t.name like '%${huotiBean.name}%'
+        </if>
+    </sql>
+
+</mapper>

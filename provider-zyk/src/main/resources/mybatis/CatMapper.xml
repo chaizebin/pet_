@@ -10,7 +10,8 @@
 			faHuoDi,
 			xiaoLiang,
 			kuCun,
-			dianPuId
+			dianPuId,
+			catImg
 		)
 		VALUES
 			(
@@ -20,12 +21,13 @@
 				#{faHuoDi},
 				${xiaoLiang},
 				${kuCun},
-				${dianPuId}
+				${dianPuId},
+				#{catImg}
 			)
     </insert>
     <update id="updateCat">
 		UPDATE t_cat
-		SET catName = #{catName},catPrice = ${catPrice},baoYou = #{baoYou},faHuoDi = #{faHuoDi},xiaoLiang = #{xiaoLiang},kuCun = #{kuCun}
+		SET catName = #{catName},catPrice = ${catPrice},baoYou = #{baoYou},faHuoDi = #{faHuoDi},xiaoLiang = #{xiaoLiang},kuCun = #{kuCun},catImg = #{catImg}
 		WHERE catId = #{catId}
     </update>
 

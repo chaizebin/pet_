@@ -34,4 +34,9 @@ public class PageController {
         return "/cat-2show";
     }
 
+    @RequestMapping("/toCat3Show")
+    public String toCat3Show(){
+        return "/cat-3show";
+    }
+
 }

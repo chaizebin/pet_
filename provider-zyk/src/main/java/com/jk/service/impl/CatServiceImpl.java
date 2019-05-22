@@ -31,6 +31,12 @@ public class CatServiceImpl implements CatService {
         PageHelper.startPage(cat.getPage(),cat.getRows());
         List<Cat> catList = catDao.queryCatForPage(cat);
         JSONObject jsonObject = new JSONObject();
+        Double size = Double.valueOf(total.size());
+        Double a = size / Double.valueOf(cat.getRows());
+        Double ceil = Math.ceil(a);
+        if (cat.getPage() != 1 && cat.getPage() > ceil){
+            catList = null;
+        }
         jsonObject.put("total",total.size());
         jsonObject.put("rows",catList);
         return jsonObject;

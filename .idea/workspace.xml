@@ -2,112 +2,100 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4adf3645-b9e3-4a18-9c78-44bd72ca9200" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/utils/OSSClientUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/171110021224325_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/171110100316199_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/171110100333567_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/171110100820793_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/171110101214847_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/171110101938774_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/171110110017401_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/171110110958830_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/171110111332308_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/171110111728152_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/171110112204762_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/171128032448129_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/180118023304709_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/180118032347901_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/180118113047221_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/180122042028498_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/20170810101101253598bc0b5b4028.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/20170810101120720598bc0c8179b7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/20170810101237519598bc11554a47.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/20170810101407247598bc16f994e9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/20170810101442434598bc192d6579.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/20170810102416856598bc3d07aca1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/20170810102639848598bc45fc344c.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/20170810102658755598bc472bba3a.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/20170810102747324598bc4a34191a.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/20170810102832235598bc4d0a890d.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/20170810102915564598bc4fbb031f.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/20170810104232159598bc81839f08.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/20170810104257270598bc8311b6c0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/20170810134840862598bf3b8e599d.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/2017081718070562459956ac91dce6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/20170821151135486599a87a75d3ab.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/2017091511071944759bb43e7dbce0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/2017091511082124659bb44251570c.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/201711231914065a16ad7ea5766_400.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/201711251101125a18dcf833058_400.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/201711251107155a18de63c7cb7_400.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/201801051521025a4f275ee55bd_400.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/PetConsult.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/RongEmoji-2.2.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/RongIMLib-2.2.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/RongIMVoice-2.2.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/RongIMWidget.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/RongIMWidget.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/angular.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/back-2-03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/book1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/cart1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/cbl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/chat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/core.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/coupon.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/customer1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/cx.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/detail.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/detail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/error.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/helpMe.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/html5shiv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/icon6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/jquery-1.11.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/jquery-1.11.3.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/jquery.SuperSlide.2.1.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/jquery.barrager.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/jquery.danmu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/jquery.fly.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/jweixin-1.0.0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/lantern.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/lazyload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/libamr-2.0.12.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/list.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/packsell.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/paging.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/pcmdata-2.0.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/pic1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/plupload.full.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/protobuf-2.1.2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/scan1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/scan2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/searchList.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/sgt.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/shopSearch.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/shopping.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/shopping.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/wePic.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/z_stat.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/cat-2show.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/171212114002409_400.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/180118032347901_400.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/180118032354572.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/180118032420217.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/180118032440204.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/180118032453267.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/180118040938783.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/180118042230909_400.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/180131100536630_400.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/20170810101101253598bc0b5b4028.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/20170810101120720598bc0c8179b7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/20170810101237519598bc11554a47.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/20170810101407247598bc16f994e9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/20170810101442434598bc192d6579.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/20170810102416856598bc3d07aca1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/2017081718070562459956ac91dce6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/20170821151135486599a87a75d3ab.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/2017091511071944759bb43e7dbce0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/2017091511082124659bb44251570c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/20180118152606_80092.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/20180118152759_28110.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/20180118152818_49674.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/20180118152854_39575.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/20180118152912_37177.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/20180118152924_58735.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/20180118152946_44505.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/20180118153020_84190.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/PetConsult.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/RongEmoji-2.2.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/RongIMLib-2.2.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/RongIMVoice-2.2.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/RongIMWidget.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/RongIMWidget.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/angular.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/back-2-04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/book1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/cart1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/cbl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/chat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/core.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/coupon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/customer1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/cx.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/detail.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/detail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/error.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/helpMe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/html5shiv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/icon6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/jquery-1.11.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/jquery-1.11.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/jquery.SuperSlide.2.1.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/jquery.barrager.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/jquery.danmu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/jquery.fly.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/jweixin-1.0.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/lantern.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/lazyload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/libamr-2.0.12.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/packsell.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/paging.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/pcmdata-2.0.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/pic1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/plupload.full.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/protobuf-2.1.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/scan1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/scan2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/searchList.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/sgt.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/share.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/share_style0_16.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/shopSearch.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/shopping.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/shopping.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/time.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/wePic.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/z_stat.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/cat-3show.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/jk/model/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/model/Cat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feign-zyk/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/feign-zyk/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/controller/CatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/controller/CatController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/test/java/com/jk/CommonApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/test/java/com/jk/CommonApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/controller/PageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-js.js" beforeDir="false" afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-js.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/add-cat.html" beforeDir="false" afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/add-cat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/cat-show.html" beforeDir="false" afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/cat-show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show.js" beforeDir="false" afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/cat-2show.html" beforeDir="false" afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/cat-2show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider-zyk/src/main/java/com/jk/service/impl/CatServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider-zyk/src/main/java/com/jk/service/impl/CatServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/provider-zyk/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/provider-zyk/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider-zyk/src/main/resources/mybatis/CatMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/provider-zyk/src/main/resources/mybatis/CatMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -142,13 +130,16 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="pet_" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/controller/CatController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="32" column="36" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="36" />
+            <state relative-caret-position="756">
+              <caret line="47" column="33" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -157,11 +148,50 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/templates/cat-2show.html">
+        <entry file="file://$PROJECT_DIR$/provider-zyk/src/main/java/com/jk/service/impl/CatServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="85" column="44" lean-forward="true" selection-start-line="85" selection-start-column="44" selection-end-line="85" selection-end-column="44" />
+            <state relative-caret-position="405">
+              <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
               <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/Cat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/controller/PageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="810">
+              <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#781#782#0" expanded="true" />
+                <element signature="e#816#817#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/templates/cat-3show.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="105" column="17" lean-forward="true" selection-start-line="105" selection-start-column="17" selection-end-line="105" selection-end-column="17" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#b#0;n#a#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -171,27 +201,31 @@
                 <element signature="n#style#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#1;n#ul#0;n#dd#0;n#dl#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#nav#0;n#section#0;n#div#1;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#span#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#span#0;n#!!top" expanded="true" />
-                <element signature="e#20#26#0" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#span#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#span#0;n#!!top" expanded="true" />
-                <element signature="e#20#26#0" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#span#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#span#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#span#1;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#2;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#span#2;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#3;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#span#3;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#4;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#span#4;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#em#0;n#div#4;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#243#249#0" expanded="true" />
+                <element signature="e#249#255#0" expanded="true" />
+                <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
@@ -202,26 +236,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show.js">
+        <entry file="file://$PROJECT_DIR$/provider-zyk/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#6#0" expanded="true" />
-                <element signature="e#6#12#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="243">
+              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/Cat.java">
+        <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="53" column="25" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="567">
+              <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -229,11 +256,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/templates/add-cat.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+            <state relative-caret-position="945">
+              <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-js.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1080">
+              <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -263,9 +299,21 @@
       <find>main-js/back-2-03.png</find>
       <find>data</find>
       <find>catName</find>
-      <find>xsz</find>
       <find>catList</find>
       <find>cat-2show.js</find>
+      <find>643</find>
+      <find>xsz</find>
+      <find>getGood(this,1,0,0);</find>
+      <find>back-2-04.png</find>
+      <find>getGood</find>
+      <find>上一页</find>
+      <find>件商品</find>
+      <find>display:block;</find>
+      <find>position: relative; width: 398px; height: 398px; top: 0px; left: 0px;</find>
+      <find>cat-3show.js</find>
+      <find>/cat-3show-js/180118032347901_400.jpeg</find>
+      <find>detail_top_center fl</find>
+      <find>sys_item_price f26</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -298,7 +346,6 @@
         <option value="$PROJECT_DIR$/provider-zyk/src/main/java/com/jk/dao/CatDao.java" />
         <option value="$PROJECT_DIR$/service-api/src/main/java/com/jk/service/CatServiceApi.java" />
         <option value="$PROJECT_DIR$/provider-zyk/src/main/java/com/jk/controller/CatController.java" />
-        <option value="$PROJECT_DIR$/provider-zyk/src/main/java/com/jk/service/impl/CatServiceImpl.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/jk/model/Image.java" />
         <option value="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/controller/MainController.java" />
         <option value="$PROJECT_DIR$/service-api/src/main/java/com/jk/service/MainService.java" />
@@ -309,23 +356,33 @@
         <option value="$PROJECT_DIR$/provider-zyk/src/main/java/com/jk/dao/MainDao.java" />
         <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/main.html" />
         <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/static/main-js.js" />
-        <option value="$PROJECT_DIR$/provider-zyk/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/cat-show.html" />
-        <option value="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/utils/OSSClientUtil.java" />
         <option value="$PROJECT_DIR$/feign-zyk/pom.xml" />
         <option value="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/controller/CatController.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/jk/model/Cat.java" />
         <option value="$PROJECT_DIR$/provider-zyk/src/main/resources/mybatis/CatMapper.xml" />
         <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/add-cat.html" />
         <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-js.js" />
-        <option value="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/controller/PageController.java" />
-        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/cat-2show.html" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/utils/OSSClientUtil.java" />
+        <option value="$PROJECT_DIR$/provider-zyk/src/main/java/com/jk/service/impl/CatServiceImpl.java" />
         <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show.js" />
+        <option value="$PROJECT_DIR$/common/src/test/java/com/jk/CommonApplicationTests.java" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/cat-2show.html" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/controller/PageController.java" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show.js" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/cat-3show.html" />
+        <option value="$PROJECT_DIR$/provider-zyk/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
   <component name="JRebelWorkspace">
     <option name="jrebelEnabledAutocompile" value="true" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -364,7 +421,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -416,6 +472,36 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="jk" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pet_" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pet_" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pet_" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pet_" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pet_" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pet_" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pet_" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pet_" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pet_" type="b2602c69:ProjectViewProjectNode" />
@@ -503,16 +589,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pet_" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pet_" type="462c0819:PsiDirectoryNode" />
-              <item name="feign-zyk" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pet_" type="b2602c69:ProjectViewProjectNode" />
@@ -655,6 +731,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -677,10 +754,10 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -708,6 +785,19 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.FeignZykApplication">
+    <configuration name="CommonApplicationTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jk.CommonApplicationTests" />
+      <module name="common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaApplicationTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jk.EurekaApplicationTests" />
       <module name="eureka" />
@@ -767,6 +857,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CommonApplicationTests" />
         <item itemvalue="Application.EurekaApplicationTests" />
         <item itemvalue="JUnit.EurekaApplicationTests.contextLoads" />
       </list>
@@ -794,7 +885,9 @@
       <workItem from="1558085790054" duration="9627000" />
       <workItem from="1558316446307" duration="25819000" />
       <workItem from="1558395652672" duration="2890000" />
-      <workItem from="1558400182974" duration="6578000" />
+      <workItem from="1558400182974" duration="19809000" />
+      <workItem from="1558439331391" duration="2798000" />
+      <workItem from="1558485333300" duration="1627000" />
     </task>
     <servers />
   </component>
@@ -804,32 +897,31 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66354000" />
+    <option name="totallyTimeSpent" value="84010000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49920255" visible="true" weight="0.27626666" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4983957" visible="true" weight="0.22453333" />
+      <window_info id="Structure" order="1" sideWeight="0.50160426" side_tool="true" weight="0.22453333" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info id="JRebel" order="8" sideWeight="0.50079745" side_tool="true" weight="0.25266525" />
+      <window_info id="Favorites" order="6" sideWeight="0.50160426" side_tool="true" weight="0.22453333" />
+      <window_info id="Web" order="7" sideWeight="0.50160426" side_tool="true" weight="0.22453333" />
+      <window_info id="JRebel" order="8" sideWeight="0.50160426" side_tool="true" weight="0.22453333" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4992" weight="0.4342246" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.4976" visible="true" weight="0.39144385" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.4976" visible="true" weight="0.43850267" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4992" weight="0.35828876" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5024" side_tool="true" weight="0.39144385" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5024" side_tool="true" weight="0.43850267" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49973333" weight="0.32941177" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
@@ -858,54 +950,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/eureka/src/main/java/com/jk/EurekaApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="22" column="45" lean-forward="true" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider-zyk/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="44" column="34" lean-forward="true" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider-zyk/src/main/java/com/jk/ProviderZykApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/FeignZykApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -1096,16 +1140,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/provider-zyk/src/main/java/com/jk/service/impl/CatServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/templates/main.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
@@ -1188,20 +1222,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/provider-zyk/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/main-js.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="424">
@@ -1231,23 +1251,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/provider-zyk/src/main/resources/mybatis/CatMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-js.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="30" column="41" lean-forward="true" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/templates/cat-show.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -1259,23 +1262,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/utils/OSSClientUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="288" lean-forward="true" selection-start-line="288" selection-end-line="288" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/feign-zyk/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show-js/cx.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -1284,52 +1277,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/controller/PageController.java">
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/main-js.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="31" />
+        <state relative-caret-position="243">
+          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/controller/CatController.java">
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/utils/OSSClientUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="32" column="36" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="36" />
+        <state relative-caret-position="211">
+          <caret line="137" column="31" selection-start-line="137" selection-start-column="31" selection-end-line="137" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/Cat.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/github/pagehelper/pagehelper/5.1.4/pagehelper-5.1.4.jar!/com/github/pagehelper/page/PageMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="53" column="25" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="189">
+          <caret line="63" column="58" lean-forward="true" selection-start-line="63" selection-start-column="58" selection-end-line="63" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/templates/add-cat.html">
+    <entry file="file://$PROJECT_DIR$/common/src/test/java/com/jk/CommonApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="152">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/templates/cat-2show.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="85" column="44" lean-forward="true" selection-start-line="85" selection-start-column="44" selection-end-line="85" selection-end-column="44" />
+        <state relative-caret-position="120">
+          <caret line="1494" column="79" selection-start-line="1494" selection-start-column="79" selection-end-line="1494" selection-end-column="79" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1369,10 +1354,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/cx.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="69" lean-forward="true" selection-start-line="7" selection-start-column="69" selection-end-line="7" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show-js/chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="40" lean-forward="true" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-2show.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        <state relative-caret-position="378">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
           <folding>
             <element signature="e#0#6#0" expanded="true" />
             <element signature="e#6#12#0" expanded="true" />
@@ -1380,9 +1379,160 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/controller/CatController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="47" column="33" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider-zyk/src/main/java/com/jk/service/impl/CatServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/Cat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/controller/PageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#781#782#0" expanded="true" />
+            <element signature="e#816#817#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-3show.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/templates/add-cat.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/cat-js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider-zyk/src/main/resources/mybatis/CatMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/templates/cat-3show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="105" column="17" lean-forward="true" selection-start-line="105" selection-start-column="17" selection-end-line="105" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#0;n#a#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#span#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#span#1;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#2;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#span#2;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#3;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#span#3;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#4;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#span#4;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#em#0;n#div#4;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#243#249#0" expanded="true" />
+            <element signature="e#249#255#0" expanded="true" />
+            <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider-zyk/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
           <splitter-proportions>
@@ -1397,6 +1547,18 @@
       <state key="JdkListConfigurable.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>JRebel|eureka</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

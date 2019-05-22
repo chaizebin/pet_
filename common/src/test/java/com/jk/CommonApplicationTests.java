@@ -13,4 +13,13 @@ public class CommonApplicationTests {
     public void contextLoads() {
     }
 
+    @Test
+    public static void main(String[] args) {
+        for (int i = 0;i < 6;i++){
+            double ceil = Math.ceil(Math.random()*33);
+            System.out.print(ceil+"\t");
+        }
+        System.out.println( Math.ceil(Math.random()*16));
+    }
+
 }

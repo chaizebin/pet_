@@ -1,0 +1,27 @@
+.PetConsult{ margin-top: 20px; padding-bottom: 20px;}
+.PetConsult-left{ width: 187px; border: 1px solid #efefef;}
+.PetConsult-left .moczzx{ height: 40px; line-height: 40px; color: #252525; text-align: center; font-size: 16px; background: #f8f8f8;}
+.PetConsult-left .czzx{ height: 40px; line-height: 40px; color: #ff5500; text-align: center; font-size: 16px;}
+.PetConsult-left a{ display: block; height: 35px; line-height: 35px; color: #252525; font-size: 16px; color: #252525; text-align: center;}
+.PetConsult-left a.curnt{ font-size: 16px; color: #ff5500;}
+
+.PetConsult-right{ width: 940px; margin-right: 40px;}
+.PetConsult-list{ }
+.PetConsult-list li{ padding:10px 0px 10px 0; border-bottom: 1px solid #e8e8e8; margin-bottom: 15px; position: relative;}
+.PetConsult-list .imgLeft{ float: left; width: 148px; height: 98px; border: 1px solid #e8e8e8; overflow: hidden;}
+.PetConsult-list .textRight{ width: 600px;overflow: hidden;}
+
+.PetConsult-list .textRight h4{ font-size: 18px; line-height: 35px; height: 35px; margin-bottom: 6px;}
+.PetConsult-list .textRight h4 a{ color: #252525; padding-left:7px;}
+.PetConsult-list .textRight h4 a:hover{color:#ff5500;}
+.PetConsult-list .textRight p{ line-height: 25px; padding-left: 7px; }
+.PetConsult-list .textRight p a{color: #252525; font-size: 14px;}
+.PetConsult-list .textRight a:hover{color: #ff5500;}
+
+.PetConsult-list .textRight .MyNews-time{font-size: 14px; color: #999; position: absolute; right: 0; top: 0; display: block; line-height: 27px;}
+
+
+.information{margin-top: 20px;}
+.information li{ height: 29px; line-height: 29px;}
+.information li a{color: #252525; font-size: 14px;}
+.information li a:hover{color: #ff5500; font-size: 16px;}

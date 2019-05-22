@@ -1,9 +1,22 @@
 $(function () {
-    initCatList();
+    sessionStorage.catPage = 1;
+    initCatList(1);
 })
-var page = 1;
+var pageCount = sessionStorage.catPage;
 var rows = 16;
-function initCatList() {
+function queryCatList(temp) {
+    if (temp == 'pageup'){
+        pageCount--;
+        if (pageCount < 1){
+            pageCount = 1;
+        }
+    }else {
+        pageCount++;
+    }
+    initCatList(pageCount);
+}
+function initCatList(page) {
+    pageCount = page;
     $.ajax({
         url: '/cat/queryCatForPage',
         type:"POST",
@@ -12,8 +25,17 @@ function initCatList() {
             rows:rows
         },
         success: function (result) {
+            $('[name="pageCount"]').removeClass("cur");
+            $('#page_'+pageCount).addClass("cur");
+            var data = result.rows;
             var html = "";
-            $.each(result, function (index, row) {
+            var page1 = '<span>共找到' + result.total + '件商品  <i class="yellow">'+page+'</i>/' + Math.ceil(result.total/rows) + '</span>';
+            $('.navList-page').find('span').html(page1);
+            if (data==null){
+                $('#catList').html("");
+                return;
+            }
+            $.each(data, function (index, row) {
                 html += "<li class=\"shop-list\">" +
                     "<div class=\"sub_img\">" +
                     "<a href=\"javascript:void(0)\">" +
@@ -29,6 +51,7 @@ function initCatList() {
                     "</span><span class=\"sub_adress_dz\">"+row.faHuoDi+"</span></div></li>";
             })
             $('#catList').html(html);
+
         },
         error: function () {
 

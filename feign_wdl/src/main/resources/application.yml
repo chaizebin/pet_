@@ -1,0 +1,18 @@
+server:
+  port: 8767
+
+spring:
+  application:
+    name: springcloud-feign
+  thymeleaf:
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+  main:
+    allow-bean-definition-overriding: true
+eureka:
+  client:
+    service-url:
+      defalutZone: http://localhost:8761/eureka
+
+

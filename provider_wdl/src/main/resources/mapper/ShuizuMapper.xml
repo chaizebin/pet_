@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jk.mapper.ShuizuMapper">
+
+    <!--查询-->
+   <!-- <select id="queryShuizuTotal"  resultType="long">
+      select count(*) from t_shuizu
+
+    </select>
+
+    <select id="queryShuizuList"  resultType="com.jk.model.ShuizuBean">
+
+      select * from t_shuizu limit #{start},#{rows}
+    </select>-->
+
+    <select id="findCount" resultType="long">
+        select count(*) from t_shuizu
+    </select>
+    <select id="findShuizuPage" resultType="com.jk.model.ShuizuBean">
+     select * from t_shuizu
+
+     limit  #{start},#{rows}
+    </select>
+
+
+    <!--删除-->
+    <delete id="delShuiById" parameterType="int">
+   delete from t_shuizu where shuizuid in (
+        <foreach collection="array" index="index" item="item" separator=",">
+            #{item}
+        </foreach>
+        )
+    </delete>
+
+    <!--新增-->
+    <insert id="saveShui" parameterType="com.jk.model.ShuizuBean">
+     insert into t_shuizu(shuizuid,name,price,baoyou,area,xiaoliang,kucun,dianpuid,image) values(#{shuizuid},#{name},#{price},#{baoyou},#{area},#{xiaoliang},#{kucun},null,#{image})
+
+    </insert>
+
+
+    <!--修改-->
+    <update id="updateShui" parameterType="com.jk.model.ShuizuBean">
+        update t_shuizu set name=#{name},price=#{price},baoyou=#{baoyou},area=#{area},xiaoliang=#{xiaoliang},kucun=#{kucun},dianpuid=#{dianpuid},image=#{image} where shuizuid=#{shuizuid}
+    </update>
+
+    <!--回显-->
+
+    <select id="findShuiByid" parameterType="int" resultType="com.jk.model.ShuizuBean">
+
+    select s.shuizuid,s.name,s.price,s.baoyou,s.area,s.xiaoliang,s.kucun,s.dianpuid,s.image from t_shuizu s where s.shuizuid=#{shuizuid}
+
+    </select>
+
+
+
+
+
+
+
+ <!--宠物资讯条查-->
+  <select id="queryCount"  resultType="long">
+   select count(*) from t_zixun z left join t_zxtype zx on z.typeId=zx.id
+      <include refid="queryZixun"></include>
+  </select>
+<select id="findZixunPage" resultType="com.jk.model.ZixunBean">
+  select z.id,z.title,z.content,date_format(z.releaseTime,'%Y-%m-%d') as releaseTime,zx.name as typeName,z.image
+  from t_zixun z left join t_zxtype zx on z.typeId=zx.id
+    <include refid="queryZixun"></include>
+  limit #{start},#{rows}
+
+</select>
+
+    <sql id="queryZixun">
+    <where>
+        <if test="zixunBean.typeId != null and zixunBean.typeId !=''">
+            and z.typeId=#{zixunBean.typeId}
+        </if>
+
+        <if test="zixunBean.title != null and zixunBean.title !=''">
+            and z.title=#{zixunBean.title}
+        </if>
+    </where>
+    </sql>
+
+
+<!--宠物资讯删除-->
+    <delete id="delZixunById" parameterType="int">
+        delete from t_zixun where id in (
+        <foreach collection="array" index="index" item="item" separator=",">
+            #{item}
+        </foreach>
+        )
+    </delete>
+
+<!--宠物资讯新增-->
+<insert id="saveZixun" parameterType="com.jk.model.ZixunBean">
+ insert into t_zixun(title,content,releaseTime,typeId,image) values(#{title},#{content},str_to_date(#{releaseTime},'%Y-%m-%d %H:%i:%s'),#{typeId},#{image})
+</insert>
+
+
+<!--宠物资讯修改-->
+    <update id="updateZixun" parameterType="com.jk.model.ZixunBean">
+  update t_zixun set title=#{title},content=#{content},releaseTime=#{releaseTime},typeId=#{typeId},image=#{image} where id=#{id}
+    </update>
+
+    <!--宠物资讯回显-->
+    <select id="findZixunByid" parameterType="int" resultType="com.jk.model.ZixunBean">
+select z.id,z.title,z.content,date_format(z.releaseTime,'%Y-%m-%d %h:%i:%s') as releaseTime,z.typeId,z.image from t_zixun z  where z.id=#{id}
+    </select>
+</mapper>

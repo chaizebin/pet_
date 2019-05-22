@@ -1,0 +1,47 @@
+#login-header{ height: 107px; padding-top: 40px;}
+#login-header .login-log{ height: 76px; line-height: 76px; }
+#login-header .login-name{font-size: 24px; color: #252525; margin-left: 27px;}
+
+#login-wraper{ border-top:1px solid #ff8808; background: url(../images/img/login-bg.jpg) no-repeat center center; height: 549px; border-bottom: 1px solid #e8e8e8;}
+#login-wraper .login-main{ height: 360px;  margin-top: 59px;}
+#login-wraper .login-main-left{width: 634px; text-align: center; padding-top: 113px;height:247px ;}
+#login-wraper .login-main-left .l_slogn{font-size: 30px; color: #ffffff; line-height: 56px;}
+#login-wraper .login-main-left .l_p{ line-height: 47px; font-size: 18px; color: #ffffff;} 
+#login-wraper .login-main-right{width:346px;min-height: 360px; /*padding: 0 110px;*/}
+#login-wraper .login-main-right .login-tab{ width: 348px;  background: #fff; padding-top: 10px; padding-bottom: 32px;}
+#login-wraper .login-main-right .l_tab{height: 45px;}
+#login-wraper .login-main-right .l_tab li{width:174px; float:left ; line-height: 45px; font-size: 16px; text-align: center; cursor: pointer;}
+#login-wraper .login-main-right .l_tab .cur{ border-bottom: 1px solid #ff5500; color: #ff5500; font-size: 18px; }
+#login-wraper .login-main-right .l_main{width: 308px;  margin: 0 auto;  display: none; margin-top: 12px;}
+#login-wraper .login-main-right .on{display:block;}
+
+.fp_input{width: 305px; height: 38px; border: 1px solid #ececec; border-radius: 5px; background: #f8f8f8; margin-top: 20px; position: relative;}
+.fp_user_bg{ width: 40px; height: 38px; background: url(../images/img/login-icon.png) no-repeat 0 0 ; display: block; float: left;}
+.fp_input input { float:left;border:none; background:none; width: 258px; background: #fff ;height: 18px; padding: 10px 0px; padding-left:6px; color: #252525;line-height: 18px;font-size: 14px;}
+.fp_input font {position: absolute; left:50px; top:9px; font-size: 14px; color: #252525; }
+
+
+.fp_psd_bg{ width: 40px; height: 38px; background: url(../images/img/login-icon.png) no-repeat -40px 0 ; display: block; float: left;}
+
+.login_auto{ height:16px; line-height: 16px;  margin-top: 18px;}
+.login_auto_btn{padding-left: 24px; display: block;float:left; background: url(../images/img/login-icon.png) no-repeat -80px 0; font-size: 14px; color: #252525;}
+.login_auto_btn.active{background-position:-80px -21px;}
+.login_forget{ font-size: 14px; color: #666666; display: block; float: right;}
+
+.reg_true{margin-top: 19px;}
+.reg_true .fp_btn{ height: 46px; line-height: 46px; background: #ff5500; color: #ffffff; text-align: center; display: block;}
+
+.login_weChat{ height: 32px; line-height: 32px; margin-top: 10px;}
+.login_weChat .login_wx{padding-left: 40px; display: block;float:left; background: url(../images/img/login-icon.png) no-repeat 0 -38px; font-size: 14px; color: #252525;}
+.login_weChat .login_register{ font-size: 14px; color: #ff5500; text-decoration: underline; float: right;}
+
+/*手机号登录*/
+.fp_input .l_phone{width:285px; padding-left: 20px;}
+.fp_input .l_fp{ left: 20px;}
+.fp_input .l_yzm{ width: 205px;padding-left: 20px;}
+
+#yzm{ display: block; width: 78px; height: 38px; background: url(../images/yzm.jpg) no-repeat; float: right;}
+
+.fp_input .l_sms{ width: 162px; padding-left: 20px;}
+#getCode{ display: block; font-size: 14px; line-height: 38px; text-align: center; width: 123px; color: #252525; background: #e8e8e8;}
+

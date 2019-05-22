@@ -1,0 +1,16 @@
+server:
+  port: 8090
+
+eureka:
+  client:
+    service-url:
+      defualZone: http://localhost:8761/eureka
+
+
+spring:
+  application:
+    name: feign-nsj
+  thymeleaf:
+    mode: HTML
+  main:
+    allow-bean-definition-overriding: true

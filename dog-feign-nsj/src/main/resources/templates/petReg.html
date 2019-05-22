@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://www.cz10000.com/Register/index.html -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1">
+    <title>欢迎注册-宠族网</title>
+    <script type="text/javascript" src="/petjs/html5shiv.js"></script>
+    <script type="text/javascript" src="/petjs/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="/petjs/public.js"></script>
+    <link href="/petjs/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="/petjs/register.css">
+</head>
+<body>
+<div id="login-header" class="grid">
+    <div class="login-log"><a href="http://www.cz10000.com/Index/index">
+        <img src="/petjs/logo.png"></a>
+        <span class="login-name">欢迎注册</span>
+    </div>
+</div>
+<div class="register">
+    <form  name="fom" id="fom" method="post">
+        <div class="register-main">
+            <ul class="register-lister">
+                <li class="fp_input"><label class="register-name">手机号：</label>
+                    <input type="text" id="phone" name="phone" class="register-text"
+                             value="" maxlength="11"
+                             placeholder="请输入手机号">
+                    <div class="error-grid">
+                        <img class="error" src="/petjs/error.png">
+                        <em class="font"></em>
+                    </div>
+                </li>
+
+                <li class="fp_input">
+                    <label class="register-name">短信验证码：</label>
+                    <input type="text" maxlength="6" name="smsCode" class="register-text w258"
+                               value="" placeholder="输入短信验证码">
+                    <a href="javascript:;" class="ident_code" onclick="getcode(this);" id="getCode">获取验证码</a>
+                    <div class="error-grid">
+                        <img class="error" src="/petjs/error.png">
+                        <em class="font"></em>
+                    </div>
+                </li>
+                <li class="fp_input"><label class="register-name">用户名：</label>
+                    <input type="text" name="account" id="account" class="register-text" value=""
+                                     placeholder="请输入用户名">
+                    <div class="error-grid">
+                        <img class="error" src="/petjs/error.png">
+                        <em class="font"></em>
+                    </div>
+                </li>
+                <li class="fp_input">
+                    <label class="register-name">密码：</label>
+                    <input type="password" id="pass" name="password" class="register-text"
+                            value="" maxlength="20"
+                            placeholder="密码（8-20位，区分大小写）">
+                    <div class="error-grid">
+                        <img class="error" src="/petjs/error.png">
+                        <em class="font"></em>
+                    </div>
+                </li>
+                <li class="fp_input">
+                    <label class="register-name">确认密码：</label>
+                    <input type="password" id="checkpass" name="password2"
+                          class="register-text" value=""
+                          maxlength="20"
+                          placeholder="密码（8-20位，区分大小写）">
+                    <div class="error-grid">
+                        <img class="error" src="/petjs/error.png">
+                        <em class="font"></em>
+                    </div>
+                </li>
+
+            </ul>
+            <div class="suc-grid">
+                <img src="/petjs/error.png">
+                <em class="font">sdfsdg</em>
+            </div>
+            <a href="javascript:;" onclick="check();" class="ft-btn" id="bind">注册</a></div>
+    </form>
+</div>
+<script type="text/javascript">
+
+
+function check() {
+    if ($("input[name='phone']").val() == '') {
+        err('phone', '请输入手机号', '');
+        return false;
+    }
+    if (!$("input[name='phone']").val().match(/^1[34578]\d{9}$/)) {
+        err('phone', '手机号格式不正确', '');
+        return false;
+    }
+
+    if ($("input[name='smsCode']").val() == '') {
+        suc('vecode', '', '');
+        err('smsCode', '请输入短信验证码', '');
+        return false;
+    }
+    if ($("input[name='account']").val() == '') {
+        suc('smsCode', '', '');
+        err('name', '请输入用户名', '');
+        return false;
+    }
+    if ($("input[name='password']").val() == '') {
+        suc('name', '', '');
+        err('pass', '请输入密码', '');
+        return false;
+    }
+    if (!$("input[name='password']").val().match(/^[a-zA-Z0-9]{6,20}$/)) {
+        err('pass', '密码格式不正确', '');
+        return false;
+    }
+    if ($("input[name='password2']").val() != $("input[name='password']").val()) {
+        suc('pass', '', '');
+        err('checkpass', '两次密码输入不一致', '');
+        return false;
+    }
+
+    var prevLink = document.referrer;
+    // message(prevLink);
+    $.ajax({
+        url: '/petReg',
+        type: 'post',
+        dataType: 'json',
+        data: $('#fom').serialize(),
+        beforeSend: function () {
+            $("#bind").removeAttr('onclick');
+            $("#bind").html("注册中,请稍后...");
+        },
+        success: function (data) {
+            if (data.code == 0) {
+                alert(data.msg);
+                location.href = '/topetLogin';
+            } else {
+                alert(data.msg);
+            }
+        },
+        complete: function () {
+            $("#bind").html("注册");
+            $("#bind").attr('onclick', 'check();');
+        }
+    });
+    // document.fom.submit();
+}
+
+function getcode() {
+    var phone = $("input[name='phone']").val();
+    if (phone == '') {
+        err('phone', '请输入手机号', '');
+        return false;
+    }
+    if (!phone.match(/^1[34578]\d{9}$/)) {
+        err('phone', '手机号码格式不正确！', '');
+        return false;
+    }
+
+    $('#getCode').removeAttr('onClick');
+    $.ajax({
+        url:'/findSmsCode',
+        type:'post',
+        data:{
+            phone:phone
+        },
+        dataType:'json',
+        success:function(data){
+            if(data.code == 0){
+                alert(data.msg)
+            }else {
+                countdown = 60;
+                setInterval(time,1000)
+                alert(data.msg)
+            }
+        }
+    })
+}
+
+//倒计时
+var time =function djs(){
+    $("#findSmsCodeBtn").prop("onclick",null);
+    $("#findSmsCodeBtn").linkbutton({text:"重新发送("+countdown+")秒"});
+    countdown--;
+    if(countdown <=0 ){
+        $("#findSmsCodeBtn").linkbutton({text:"获取验证码"});
+        $("#findSmsCodeBtn").bind("click",function(){
+            findSmsCode();
+        });
+        clearInterval(time);
+    }
+}
+
+function suc(obj, content, type) {
+    if (type == '') {
+        var _this = $("input[name='" + obj + "']");
+        _this.siblings('.error-grid').find('em').html(content).css({"color": 'green'});
+        _this.siblings('.error-grid').find('img').attr('src', '/petjs/suc.png');
+        _this.siblings('.error-grid').show();
+        _this.css({'border-color': '#efefef'});
+    } else {
+        var _this = $("#" + obj);
+        _this.siblings('.suc-grid').css({'width': '450px', 'margin-top': '20px', 'margin-left': '100px'});
+        _this.siblings('.suc-grid').find('em').html(content).css({"color": 'green'});
+        _this.siblings('.suc-grid').find('img').attr('src', '/petps/suc.png');
+        _this.siblings('.suc-grid').show();
+    }
+}
+
+function err(obj, content, type) {
+    if (type == '') {
+        var _this = $("input[name='" + obj + "']");
+        _this.siblings('.error-grid').find('em').html(content).css({'color': '#e70416'});
+        _this.siblings('.error-grid').find('img').attr('src', '/petjs/error.png');
+        _this.siblings('.error-grid').show();
+        _this.focus().css({'border-color': '#e60012'});
+    } else {
+        var _this = $("#" + obj);
+        _this.siblings('.suc-grid').css({'width': '450px', 'margin-top': '20px', 'margin-left': '100px'});
+        _this.siblings('.suc-grid').find('em').html(content).css({'color': '#e70416'});
+        _this.siblings('.suc-grid').find('img').attr('src', '/petjs/error.png');
+        _this.siblings('.suc-grid').show();
+    }
+}
+</script>
+<div class="home-honer mt60">
+    <div class="grid clear">
+        <ul>
+            <li class="honer honer1"><p>品质保障 种类齐全</p></li>
+            <li class="honer honer2"><p>七天退换 售后无忧</p></li>
+            <li class="honer honer3"><p>精致服务 宠友信赖</p></li>
+            <li class="honer honer4"><p>天天特价 嗨购全场</p></li>
+        </ul>
+    </div>
+</div>
+<div class="fotter">
+    <div class="grid"><p>2015-2017 cz10000.com 版权所有 京ICP备15063352号 北京宠族网络科技有限公司</p>
+        <div class="cnzz">
+            <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+            document.write(unescape("%3Cspan id='cnzz_stat_icon_1263419271'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263419271%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+            <span id="cnzz_stat_icon_1263419271"><a href="https://www.cnzz.com/stat/website.php?web_id=1263419271"
+                                                    target="_blank" title="站长统计"><img border="0" hspace="0" vspace="0"
+                                                                                      src="/petjs/pic1.gif"></a></span>
+            <script src="/petjs/z_stat.php" type="text/javascript"></script>
+            <script src="/petjs/core.php" charset="utf-8" type="text/javascript"></script>
+        </div>
+    </div>
+</div>
+<div class="home-auth mt6">
+    <div class="grid1 clear">
+        <ul>
+            <li class="auth auth1"></li>
+            <li class="auth auth2"></li>
+            <li class="auth auth3"></li>
+            <li class="auth auth4"></li>
+            <li class="auth auth5"></li>
+        </ul>
+    </div>
+    <script language="JavaScript"
+            type="text/javascript">        if ((navigator.userAgent.indexOf('MSIE') >= 0) && (navigator.userAgent.indexOf('Opera') < 0)) {
+        $(".register-text").css({'height': '38px'});
+    }
+    // else if (navigator.userAgent.indexOf('Firefox') >= 0){
+    //     alert('你是使用Firefox')
+    // }else if (navigator.userAgent.indexOf('Opera') >= 0){
+    //     alert('你是使用Opera')
+    // }else{
+    //     alert('你是使用其他的浏览器浏览网页！')
+    // }
+    </script>
+</div>
+</body>
+</html>

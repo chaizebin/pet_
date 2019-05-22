@@ -1,0 +1,56 @@
+.mt80{
+	margin-top: 80px;
+}
+.good404{
+	height: 650px;
+}
+.home-honer .cosmonaut{
+	height: 260px;
+	background: url('../images/img/cosmonaut.png') no-repeat center center;
+}
+.home-honer .duanluo{
+	margin-top: 30px;
+	font-size: 28px;
+	color: #252525;
+}
+.home-honer .duanluo .font{
+	font-size: 34px;
+	margin-left: 180px;
+	color: #000;
+}
+.home-honer .duanluo .font1{
+	margin-top: 40px;	
+	margin-left: 180px;
+}
+.home-honer .duanluo .font2{
+	margin-left: 250px;
+}
+.home-honer .duanluo span{
+	color: #ff5600;
+}
+.g404{
+	height: 570px;
+}
+.home-honer .duanluo .center{
+	text-align: center;
+	padding-bottom: 10px;
+}
+.home-honer .error{
+	color: #fff;
+	font-size: 21px;
+	background: #ff5900;
+	border: 1px solid #f74101;
+	width: 160px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	margin: 0 auto;	
+	margin-top: 30px;
+	border-radius: 5px;
+}
+.home-honer .error:hover{
+	cursor: pointer;
+}
+.home-honer .error a{
+	color: #fff;
+}

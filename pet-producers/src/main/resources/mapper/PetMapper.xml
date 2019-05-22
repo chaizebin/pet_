@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jk.mapper.PetMapper">
+<!--<insert id="saveAgencyInfo" parameterType="com.jk.pojo.ProductAgency">
+insert into drug_agency_product(product_name,product_common_name,product_brand,
+product_distribution_channel,product_message_valid_period,product_photo,
+demand_describe,product_linkman,contact_phone,contact_address,product_status,rc_district_id
+)
+VALUES(
+#{productName},#{productCommonName},#{productBrand},#{productDistributionChannel},#{productMessageValidPeriod},
+#{productPhoto},#{demandDescribe},
+#{productLinkman},#{contactPhone},#{contactAddress},1,#{rcDistrictId}
+)
+</insert>
+<select id="queryAgencyInfo" resultType="com.jk.pojo.ProductAgencyDto">
+select d.product_id productId, d.product_name productName,d.product_linkman productLinkman,d.contact_phone contactPhone,d.product_status productStatus,r.district agencyCity,r2.district agencyProvince from drug_agency_product d,drug_rc_district r,drug_rc_district r2 where
+ d.rc_district_id=r.id and r.pid=r2.id and d.product_status=1
+</select>
+ <select id="approveAgencyInfo" resultType="com.jk.pojo.ProductAgencyDto">
+  select d.product_id productId, d.product_name productName,d.product_linkman productLinkman,d.contact_phone contactPhone,d.product_status productStatus,r.district agencyCity,r2.district agencyProvince from drug_agency_product d,drug_rc_district r,drug_rc_district r2 where
+ d.rc_district_id=r.id and r.pid=r2.id and d.product_status=2
+ </select>
+ <delete id="deleteAgencyInfo" parameterType="String">
+  delete  from drug_agency_product  where product_id =#{id}
+ </delete>
+ <update id="updateAgencyInfo" parameterType="String">
+  update drug_agency_product set product_status=2 where product_id =#{id}
+ </update>
+ <select id="selectDirect" parameterType="String" resultType="com.jk.pojo.District">
+  select id districtId,district districtName,level districtLevel from drug_rc_district  where pid=#{pid}
+ </select>
+ <insert id="submitAuditInfo" parameterType="com.jk.pojo.EnterpriseQualificationDetail">
+insert into drug_enterprise_qualification(bussiness_type,certificate_number,enterprise_name,enterprise_man,enterprise_phone,enterprise_area,
+enterprise_address,enterprise_supply_area
+)
+VALUES(
+#{bussinessType},#{certificateNumber},#{enterpriseName},#{enterpriseMan},
+#{enterprisePhone},#{enterpriseArea},#{enterpriseAddress},#{enterpriseSupplyArea}
+)
+ </insert>
+ <insert id="submitAuditInfo2" parameterType="com.jk.pojo.EnterpriseQualificationDetail">
+insert into drug_enterprise_qualification_detail(
+enterprise_certificate_number,enterprise_certificate_time,enterprise_certificate_expiring,enterprise_certificate_img,
+medicinal_certificate_number,medicinal_certificate_time,medicinal_certificate_expiring,medicinal_certificate_img,
+GSP_certificate_number,GSP_certificate_time,GSP_certificate_expiring,GSP_certificate_img,
+quality_identity_card_number,quality_identity_card_front_img,quality_identity_card_back_img,
+power_attorney_number,power_attorney_time,power_attorney_expiring,power_attorney_img
+)
+VALUES(
+#{enterpriseCertificateNumber},#{enterpriseCertificateTime},#{enterpriseCertificateExpiring},#{enterpriseCertificateImg},
+#{medicinalCertificateNumber},#{medicinalCertificateTime},#{medicinalCertificateExpiring},#{medicinalCertificateImg},
+#{gspCertificateNumber},#{gspCertificateTime},#{gspCertificateExpiring},#{gspCertificateImg},
+#{qualityIdentityCardNumber},#{qualityIdentityCardFrontImg},#{qualityIdentityCardBackImg},
+#{powerAttorneyNumber},#{powerAttorneyTime},#{powerAttorneyExpiring},#{powerAttorneyImg}
+)
+ </insert>
+
+
+ <select id="queryGoodsById" parameterType="Integer" resultType="com.jk.pojo.Goods">
+select goods_id id,goods_name text from drug_goods where goods_pid=#{value}
+ </select>
+<select id="queryNewGoods" resultType="com.jk.pojo.NewestGoods">
+
+ select * from drug_newest_goods
+</select>
+ <insert id="addSupplyGoods" parameterType="com.jk.pojo.ShoppingInfo">
+  insert into drug_shoppingInfo (realname,phone,drugname,factory,batchNumber,specification,
+  num,drugtype,keeptime,introduction)
+VALUES(#{realname},#{phone},#{drugname},#{factory},#{batchNumber},#{specification},
+#{num},#{drugtype},#{keeptime},#{introduction})
+ </insert>
+ <select id="querySupplyGoods" resultType="com.jk.pojo.ShoppingInfo">
+select * from drug_shoppingInfo
+ </select>-->
+ <select id="queryClassificationById" resultType="com.jk.model.Classification" parameterType="Integer">
+   select pet_id id,pet_name text from pet_classification where pet_pid=#{value}
+ </select>
+
+    <select id="queryOrderForPage" resultType="com.jk.model.OtherBean">
+      select * from t_other
+    </select>
+</mapper>
+    

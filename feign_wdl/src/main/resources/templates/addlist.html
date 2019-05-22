@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/js/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css">
+    <script src="/js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <script src="/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+
+   <!-- <script src="/js/bootstrap-fileinput/js/fileinput.js"></script>
+    <script src="/js/bootstrap-fileinput/js/locales/zh.js"></script>
+    <link rel="stylesheet" href="/js/bootstrap-fileinput/css/fileinput.css">-->
+</head>
+<script>
+    $(function () {
+        initFile();
+    })
+    //oss上传图片
+    function initFile() {
+        $('#storyImg').fileinput({
+            language: 'zh', //设置语言
+            uploadUrl: '/updaloadImg', //上传的地址
+            allowedFileExtensions: ['jpg', 'gif', 'png'],//接收的文件后缀
+            showUpload: true, //是否显示上传按钮
+            showCaption: false,//是否显示标题
+            browseClass: "btn btn-primary", //按钮样式
+            //dropZoneEnabled: false,//是否显示拖拽区域
+            //minImageWidth: 50, //图片的最小宽度
+            //minImageHeight: 50,//图片的最小高度
+            //maxImageWidth: 1000,//图片的最大宽度
+            //maxImageHeight: 1000,//图片的最大高度
+            //maxFileSize: 0,//单位为kb，如果为0表示不限制文件大小
+            //minFileCount: 0,
+            maxFileCount: 1, //表示允许同时上传的最大文件个数
+            enctype: 'multipart/form-data',
+            validateInitialCount:true,
+            /* initialPreview:data,
+             //初始化图片配置：
+             initialPreviewConfig: [
+                 {key: 1, showDelete: false}
+             ],
+             //是否初始化图片显示
+             initialPreviewAsData: true,*/
+            previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+            msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！",
+        }).on('fileuploaded', function(event, data, previewId, index) {
+            var imgval = $('#headImg').val();
+            if(imgval == null || imgval == "" || imgval == undefined){
+                imgval = data.response;
+            }/*else{
+				imgval += ","+"http://<%= request.getServerName()%>:<%=request.getServerPort()%><%=request.getContextPath()%>/"+data.response;
+			}*/
+            $('#headImg').val(imgval);
+        });
+    }
+</script>
+<body>
+<div class="container-fluid">
+    <form action="from-horizontal" id="shuiForm" method="post">
+        <div class="form-group">
+            <label for="nameId" class="col-sm-2 control-label">标题</label>
+            <div class="col-sm-4">
+                <input type="text" id="nameId" name="name" class="form-control">
+            </div>
+            <label for="priceId" class="col-sm-2 control-label">宠族价</label>
+            <div class="col-sm-4">
+                <input type="text" id="priceId" name="price" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="falseId" class="col-sm-2 control-label">是否包邮</label>
+            <div class="col-sm-4">
+
+                <input type="radio" name="baoyou" id="falseId" value="1">包邮
+                <input type="radio" name="baoyou" id="trueId" value="2">不包邮
+            </div>
+            <label for="areaId" class="col-sm-2 control-label">发货地</label>
+            <div class="col-sm-4">
+                <input type="text" id="areaId" name="area" class="form-control date">
+            </div>
+        </div>
+
+
+            <label for="xiaoliangId" class="col-sm-2 control-label">销量</label>
+            <div class="col-sm-10">
+                <input type="text" id="xiaoliangId" name="xiaoliang" class="form-control">
+            </div>
+            <label for="kucunId" class="col-sm-2 control-label">库存</label>
+            <div class="col-sm-10">
+                <input type="text" id="kucunId" name="kucun" class="form-control">
+            </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="storyImg">商品图片:</label>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <input type="hidden" id="headImg" name="image" />
+                <input type="file" class="projectfile" multiple accept="image/*" name="img" id="storyImg">
+            </div>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

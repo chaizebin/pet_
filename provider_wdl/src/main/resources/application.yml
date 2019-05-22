@@ -1,0 +1,46 @@
+server:
+  port: 8765
+
+spring:
+  application:
+    name: springcloud-goods-reg
+      #data:
+    #mongodb:
+    #uri: mongodb://127.0.0.1:27017/1809a
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: root
+    url: jdbc:mysql://192.168.1.122:3306/pet?serverTimezone=Hongkong&useUnicode=true&characterEncoding=utf-8
+    username: root
+    #redis:
+    #database: 0
+    #host: 127.0.0.1
+    #port: 6379
+    #password:
+    #timeout: 5000
+    #pool:
+    #max-active: 20
+    #max-wait: -1
+    #max-idle: 8
+    #min-idle: 0
+mybatis:
+  mapper-locations: classpath:/mapper/*.xml
+
+    #??????
+    #pagehelper.helper-dialect=mysql
+    #pagehelper.params=count=countSql
+    #pagehelper.reasonable=true
+    #pagehelper.support-methods-arguments=true
+    #pagehelper:
+    #helper-dialect: mysql
+    #params:
+  #count: countSql
+  #reasonable: true
+  #support-methods-arguments: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+

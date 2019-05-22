@@ -1,0 +1,54 @@
+.price{position:relative;font-size:21px;color:#e60012;left:0;display:block;width:auto;display:inline-block;}
+.title-con{font-size:14px;color:#EB3D3D;line-height:14px;}
+.sum-li{margin-bottom:3px;line-height:32px;display:inline-block;display:block;}
+.dt{float:left;min-width:64px;line-height:30px;white-space:nowrap;text-align:right;color:#252525;}
+.price_two{text-decoration:line-through;color:#999999;font-size:16px;position:relative;display:inline-block;padding-left: 6px;}
+.f16{font-size:16px !important;}
+.f26{font-size:26px !important;}
+.i_price{text-decoration:line-through;color:#999999;font-size:16px;position:relative;display:inline !important;}
+.deo_price{text-decoration:line-through;color:#999999;font-size:16px;position:relative;}
+.cx{display:inline-block;width:63px;height:63px;background:url(/Tpl/public/cx/cx.png) no-repeat;background-size:100% 100%;z-index:999;position:absolute;margin:-11px 165px;}
+.ms{display:inline-block;width:63px;height:63px;background:url(/Tpl/public/cx/ms.png) no-repeat;background-size:100% 100%;z-index:999;position:absolute;margin:-11px 165px;}
+.tj{display:inline-block;width:63px;height:63px;background:url(/Tpl/public/cx/tj.png) no-repeat;background-size:100% 100%;z-index:999;position:absolute;margin:-11px 165px;}
+.shop-cx{display:inline-block;width:50px;height:50px;background:url(/Tpl/public/cx/cx.png) no-repeat;background-size:100% 100%;z-index:999;position:absolute;margin:-7px 38px;}
+.shop-ms{display:inline-block;width:50px;height:50px;background:url(/Tpl/public/cx/ms.png) no-repeat;background-size:100% 100%;z-index:999;position:absolute;margin:-7px 38px;}
+.shop-tj{display:inline-block;width:50px;height:50px;background:url(/Tpl/public/cx/tj.png) no-repeat;background-size:100% 100%;z-index:999;position:absolute;margin:-7px 38px;}
+.box-title{float:left;min-width:64px;line-height:20px;white-space:nowrap;text-align:right;color:#252525;margin-left:-6px;}
+.box-con dd{line-height:20px;white-space:nowrap;min-width:356px;float:left;}
+.box-kou dt{float:left;min-width:64px;white-space:nowrap;text-align:right;color:#252525;margin-left:-5px;}
+.box-con dt{float:left;min-width:64px;white-space:nowrap;text-align:right;color:#252525;}
+.cxt dl{background: url(/Tpl/public/cx/cxt.png) no-repeat; background-size:100% 100%;z-index:999;height: 46px;}
+.cxt{border:none !important;}
+.cxt dt{color:#fff !important;}
+.cxt span{color:#fff !important;}
+.cxt b{color:#fff !important;}
+.tjt dl{background: url(/Tpl/public/cx/tjt.png) no-repeat; background-size:100% 100%;z-index:999;height: 46px;}
+.tjt{border:none !important;}
+.tjt dt{color:#fff !important;}
+.tjt span{color:#fff !important;}
+.tjt b{color:#fff !important;}
+.mst{width: 464px; height: 34px; background: url(/Tpl/public/cx/mst.png) no-repeat; background-size:100% 100%; position: relative;}
+.mst img{margin: 8px 9px; display: inline;}
+.out{width: 165px; height: 100%; position: relative; margin:-34px 291px;}
+.timeout{width: 100px;font-size: 14px; line-height: 33px;display: inline-block;position: relative;right: 0;margin: 0 auto;color: #fff;}
+.startime{position: relative;margin: -26px 70px;width: 117px;}
+.startime span{width: 34px; height: 24px; background: url(/Tpl/public/cx/timek.png) no-repeat; background-size: 100% 100%; color: #fff; font-size: 15px; padding: 3px;}
+.startime b{color: #fff; font-size: 15px;}
+/*友情链接*/
+.link{margin:0;padding:10px;font-size:14px;background: #fff;}
+.link-2{margin:0 auto;width:1200px;margin-top:0}
+.link-name{font-size:18px;color:#252525;height:45px;line-height:45px}
+.link-content{margin:0 -12px;display:inline-block}
+.link-content li{line-height:24px;float:left;font-size:14px;margin-left:12px;word-spacing:8px;letter-spacing:1px}
+.link-content li a{color:#252525}
+
+.img111{margin: 0 auto;position: relative;top:52px;}
+.out2{width: 100%;height: 100px;margin: 40px -12px;}
+.startime1{position: relative;display:inline-block;}
+.startime1 span{width: 35px;height: 35px;background: url(/Tpl/public/cx/timek.png) no-repeat;background-size: 100% 100%;color: #fff;font-size: 22px;padding: 5px;border-radius: 9px;}
+.nei{color:#FF5500;font-size: 16px;display: inline-block;}
+
+
+
+
+

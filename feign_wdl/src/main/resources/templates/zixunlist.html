@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 引入jquery -->
+    <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+    <!-- 引入bootstrap的css、js -->
+    <link rel="stylesheet" href="/js/bootstrap3/css/bootstrap.css">
+    <script type="text/javascript" src="/js/bootstrap3/js/bootstrap.js"></script>
+    <!-- 引入tree的js、css -->
+    <link rel="stylesheet" href="/js/bootstrap-treeview/bootstrap-treeview.min.css">
+    <script type="text/javascript" src="/js/bootstrap-treeview/bootstrap-treeview.min.js"></script>
+    <!-- 引入选项卡的js、css -->
+    <link rel="stylesheet" href="/js/bootStrap-addTabs/bootstrap.addtabs.css">
+    <script type="text/javascript" src="../js/bootStrap-addTabs/bootstrap.addtabs.min.js"></script>
+    <!-- 引入table的css、js -->
+    <link rel="stylesheet" href="/js/bootstrap-table/bootstrap-table.css">
+    <script type="text/javascript" src="/js/bootstrap-table/bootstrap-table.js"></script>
+    <script type="text/javascript" src="/js/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+    <!-- 引入删除提示框 -->
+
+    <script type="text/javascript" src="/js/bootstrap-bootbox/bootbox.js"></script>
+
+    <!-- 引入时间的css、js -->
+    <link rel="stylesheet" href="/js/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css">
+    <script  src="/js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <script  src="/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+
+
+
+</head>
+<body>
+<div id="toolbar">
+    <form class="form-inline">
+        <div class="form-group">
+            <label for="type1">资讯类型</label>
+            <select id="type1" name="typeId" class="form-control">
+            </select>
+
+            <label for="titleId">图书名:<label>
+                <input type="text" id="titleId" name="title" class="form-control">
+        </div>
+        <button type="button" onclick="searchZixun()" class="btn btn-info">
+            <i class="glyphicon glyphicon-search"></i>
+            搜索
+        </button>
+    </form>
+    <button type="button" onclick="addZixun()" class="btn btn-info">新增</button>
+    <button type="button" onclick="delMany()" class="btn btn-danger">批量删除</button>
+</div>
+<table id="myTable"></table>
+</body>
+<script>
+    $(function(){
+        initZixunTable();
+        initTypeSelect();
+    })
+    //........
+    $('.date').datetimepicker({
+        language: 'zh-CN',//显示中文
+        format: 'yyyy-mm-dd hh:ii:ss',//显示格式
+        minView: "month",//设置只显示到月份
+        initialDate: new Date(),//初始化当前日期
+        autoclose: true,//选中自动关闭
+        todayBtn: true//显示今日按钮
+    });
+
+
+    function searchZixun(){
+        $("#myTable").bootstrapTable('refresh');
+    }
+
+    //列表展示
+    function initZixunTable(){
+        $("#myTable").bootstrapTable({
+            fit:true,
+            url:'/findZixunPage',
+            toolbar:'#toolbar',
+            pagination:true, //是否展示分页
+            pageList:[2,4,6,8,10,20,30],//分页组件
+            pageNumber:1,
+            pageSize:2,//默认每页条数*/
+            sidePagination:'server',//分页方式：client客户端分页，server服务端分页（*
+            striped:true,
+            showRefresh:true,//是否显示刷新按钮
+            queryParams:function(){
+                var type=$("#type1").val();
+                var title=$("#titleId").val();
+                return {
+                    page: this.pageNumber,
+                    rows: this.pageSize,
+                    typeId:type,
+                    title:title
+
+                }
+            },
+
+
+            columns:[
+                {checkbox:true},
+                {field:'id',title:'主键id'},
+                {field:'title',title:'标题'},
+                {field:'content',title:'内容'},
+                {field:'typeName',title:'类型名称'},
+                {field:'releaseTime',title:'发布时间'},
+                {field:'image',title:'商品图片',formatter:function(value,row,index){
+                        var str ='<img src="'+row.image+'" heigth="50px" width="50px">'
+                        return str;
+                    }},
+                {field:'111',title:'操作',formatter:function(value,row,index){
+                        return '<a href="javascript:delZixun('+row.id+');">删除</a> | <a href="javascript:updZixun('+row.id+');">修改</a>'
+                    }}
+
+            ]
+        })
+    }
+
+    //类型
+
+    function initTypeSelect(){
+        $.ajax({
+            url:'/findZixunType',
+            type:'post',
+            async:false,//同步
+            data:{},
+            dataType:'json',
+            success:function(data){
+                var html = '<option value="">请选择</option>';
+                $.each(data,function (index,row) {
+                    html += '<option value="'+row.id+'">'+row.name+'</option>'
+                })
+                //console.log(html)
+                $("#type").html(html);
+                $("#type1").html(html);
+            }
+        })
+    }
+
+
+ //宠物资讯删除
+    //单删
+    function delOne(id){
+        delZi(id)
+    }
+    //批删
+    function delMany(){
+        var ids = '';
+        var news = $("#myTable").bootstrapTable("getSelections");
+        for (var i = 0; i < news.length; i++) {
+            ids += ids == '' ? news[i].id : ","+news[i].id
+        }
+        delZixun(ids);
+    }
+    //删除提出公共代码
+    function delZixun(id){
+
+        bootbox.confirm({
+            size:"small",
+            message:"你确定要删除吗？",
+            callback:function(result){
+                if(result){
+                    $.ajax({
+                        url:'/delZixunById',
+                        type:'post',
+                        data:{ids:id},
+                        dataType:'json',
+                        success:function(data){
+                            if(data){
+                                searchZixun();
+                            }else{
+                                bootbox.alert({
+                                    size:"amall",
+                                    title:"提示",
+                                    massage:'删除失败',
+                                })
+                            }
+                        }
+                    })
+                }
+            }
+        })
+    }
+
+
+//宠物资讯新增
+    //新增
+    var res;
+    function createAddContent(url){
+        $.ajax({
+            url:url,
+            async:false,
+            success:function(data){
+                res = data;
+            }
+        });
+        return res;
+    }
+
+    function addZixun(){
+        var url='toAddzixun';
+        var dialog=bootbox.dialog({
+            title:'新增宠物资讯',
+            message:createAddContent(url),
+            size:'large',
+            buttons:{
+                cancle:{
+                    label:"关闭",
+                    className:'btn-danger',
+                    callback:function(){
+                        console.log('Custom cancle clicked');
+                    }
+                },
+                ok:{
+                    label:"保存",
+                    className:'btn-info',
+                    callback:function(){
+
+                        $.ajax({
+
+                            url:'/saveZixun',
+
+                            type:'post',
+                            data:$("#zixunForm").serialize(),
+                            dataType:'json',
+                            success:function(data){
+                                alert();
+                                if (data) {
+                                    searchZixun();//刷新
+                                }else{
+                                    bootbox.alert({
+                                        size:'small',
+                                        title:'提示',
+                                        message:'新增失败',
+                                    })
+                                }
+                            }
+                        })
+                    }
+                }
+            }
+        })
+    }
+
+//宠物资讯修改   先打开弹框
+
+    function updZixun(id){
+        //打开修改弹框
+        openEditDialog();
+        //初始化表单数据
+        initTypeSelect();
+        //查询回显数据
+        $.ajax({
+            url:'/findZixunByid',
+            type:'post',
+            data:{id:id},
+            dataType:'json',
+            success:function(data){
+                $("#zxId").val(data.id);
+                $("#titleId").val(data.title);
+                $("#contentId").val(data.content);
+                $("#type").val(data.typeId);
+                $("#releaseTimeId").val(data.releaseTime);
+
+            }
+
+        })
+    }
+
+    function openEditDialog(){
+        var url='toUpdzixun';
+        bootbox.dialog({
+            title:'修改水族',
+            message:createAddContent(url),
+            size:'large',
+            buttons:{
+                cancle:{
+                    label:"关闭",
+                    className:'btn-danger',
+                    callback:function(){
+                        console.log('Custom cancle clicked');
+                    }
+                },
+                ok:{
+                    label:"保存",
+                    className:'btn-info',
+                    callback:function(){
+                        $.ajax({
+                            url:'/saveZixun',
+                            type:'post',
+                            data:$("#zixunForm").serialize(),
+                            dataType:'json',
+                            success:function(data){
+                                if (data) {
+                                    searchZixun();//刷新
+                                }else{
+                                    bootbox.alert({
+                                        size:'small',
+                                        title:'提示',
+                                        message:'修改失败',
+                                    })
+                                }
+                            }
+                        })
+                    }
+                }
+            }
+        })
+    }
+
+
+//oss上传图片
+    function initFile() {
+        $('#storyImg').fileinput({
+            language: 'zh', //设置语言
+            uploadUrl: '/updaloadImg', //上传的地址
+            allowedFileExtensions: ['jpg', 'gif', 'png'],//接收的文件后缀
+            showUpload: true, //是否显示上传按钮
+            showCaption: false,//是否显示标题
+            browseClass: "btn btn-primary", //按钮样式
+            //dropZoneEnabled: false,//是否显示拖拽区域
+            //minImageWidth: 50, //图片的最小宽度
+            //minImageHeight: 50,//图片的最小高度
+            //maxImageWidth: 1000,//图片的最大宽度
+            //maxImageHeight: 1000,//图片的最大高度
+            //maxFileSize: 0,//单位为kb，如果为0表示不限制文件大小
+            //minFileCount: 0,
+            maxFileCount: 1, //表示允许同时上传的最大文件个数
+            enctype: 'multipart/form-data',
+            validateInitialCount:true,
+            /* initialPreview:data,
+             //初始化图片配置：
+             initialPreviewConfig: [
+                 {key: 1, showDelete: false}
+             ],
+             //是否初始化图片显示
+             initialPreviewAsData: true,*/
+            previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+            msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！",
+        }).on('fileuploaded', function(event, data, previewId, index) {
+            var imgval = $('#headImg').val();
+            if(imgval == null || imgval == "" || imgval == undefined){
+                imgval = data.response;
+            }/*else{
+				imgval += ","+"http://<%= request.getServerName()%>:<%=request.getServerPort()%><%=request.getContextPath()%>/"+data.response;
+			}*/
+            $('#headImg').val(imgval);
+        });
+    }
+
+</script>
+</html>

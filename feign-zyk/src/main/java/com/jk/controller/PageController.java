@@ -14,19 +14,29 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class PageController {
 
-    @RequestMapping("toCatShow")
+    @RequestMapping("/toCatShow")
     public String toCatShow(){
-        return "cat-show";
+        return "/cat-show";
     }
 
-    @RequestMapping("toCatAdd")
+    @RequestMapping("/toCatAdd")
     public String toCatAdd(){
-        return "add-cat";
+        return "/add-cat";
     }
 
-    @RequestMapping("toMain")
+    @RequestMapping("/toMain")
     public String toMain(){
-        return "main";
+        return "/main";
+    }
+
+    @RequestMapping("/toCat2Show")
+    public String toCat2Show(){
+        return "/cat-2show";
+    }
+
+    @RequestMapping("/toCat3Show")
+    public String toCat3Show(){
+        return "/cat-3show";
     }
 
 }

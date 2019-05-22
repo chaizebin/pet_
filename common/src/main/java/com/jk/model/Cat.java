@@ -66,5 +66,5 @@ public class Cat {
     /**
      * 商品图片
      */
-    private String image;
+    private String catImg;
 }

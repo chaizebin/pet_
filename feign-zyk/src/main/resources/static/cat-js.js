@@ -37,7 +37,7 @@ function initShuizuTable(){
             {field:'xiaoLiang',title:'销量'},
             {field:'kuCun',title:'库存'},
             {field:'image',title:'图片',formatter:function(value,row,index){
-                    var str ='<img src="'+row.image+'">'
+                    var str ='<img src="'+row.catImg+'" style="height: 50px;width: 50px">'
                     return str;
                 }},
             {field:'123',title:'操作',formatter:function(value,row,index){
@@ -58,12 +58,13 @@ function upCatInfoById(id) {
         success:function(result){
             addS();
             $('#catId').val(result.catId);
-            $('#catName').val(result.catName);
+            $('#catName1').val(result.catName);
             $('#catPrice').val(result.catPrice);
             result.baoYou == "是" ? $('#falseId').prop('checked',true) : $('#trueId').prop('checked',true)
             $('#faHuoDi').val(result.faHuoDi);
             $('#xiaoLiang').val(result.xiaoLiang);
             $('#kuCun').val(result.kuCun);
+            initFile(result.catImg);
         },
         error:function(){
 
@@ -150,7 +151,7 @@ function createAddContent(url){
 
 function addS(){
 
-    var url='toCatAdd';
+    var url='/toCatAdd';
     var dialog=bootbox.dialog({
         title:'catInfo',
         message:createAddContent(url),

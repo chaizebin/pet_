@@ -1,117 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4adf3645-b9e3-4a18-9c78-44bd72ca9200" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/model/OtherBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/171116042010611_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/171116042319530_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/171116042554229_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/171116042818877_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/171116042915549_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/171116043108373_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/171221053142929_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/17122105331738_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/171221053448283_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/171221054247319_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/171221054444887_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/17122105461955_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/171221054749537_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/171221054934751_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/171221055821134_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/171221060424607_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/171221062059762_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/180104034922684_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/180105040526533_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/180118031544467_400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/20170810101101253598bc0b5b4028.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/20170810101120720598bc0c8179b7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/20170810101237519598bc11554a47.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/20170810101407247598bc16f994e9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/20170810101442434598bc192d6579.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/20170810102416856598bc3d07aca1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/20170810102639848598bc45fc344c.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/20170810102658755598bc472bba3a.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/20170810102747324598bc4a34191a.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/20170810102832235598bc4d0a890d.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/20170810102915564598bc4fbb031f.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/20170810104232159598bc81839f08.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/20170810104257270598bc8311b6c0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/20170810134840862598bf3b8e599d.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/2017081718070562459956ac91dce6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/20170821151135486599a87a75d3ab.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/2017091511071944759bb43e7dbce0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/2017091511082124659bb44251570c.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/PetConsult.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/RongEmoji-2.2.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/RongIMLib-2.2.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/RongIMVoice-2.2.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/RongIMWidget.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/RongIMWidget.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/angular.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/back-2-04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/book1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/cart1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/cbl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/chat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/core.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/coupon.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/customer1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/cx.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/detail.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/detail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/error.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/helpMe.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/html5shiv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/icon6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/jquery-1.11.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/jquery-1.11.3.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/jquery.SuperSlide.2.1.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/jquery.barrager.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/jquery.danmu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/jquery.fly.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/jweixin-1.0.0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/lantern.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/lazyload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/libamr-2.0.12.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/list.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/packsell.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/paging.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/pcmdata-2.0.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/pic1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/plupload.full.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/protobuf-2.1.2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/scan1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/scan2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/searchList.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/sgt.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/shopSearch.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/shopping.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/shopping.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/wePic.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/static/homePage2_files/other_files/z_stat.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-web/src/main/resources/templates/other.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pet-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-api/src/main/java/com/jk/service/PetServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-api/src/main/java/com/jk/service/PetServiceApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-producers/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pet-producers/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-producers/src/main/java/com/jk/controller/PetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-producers/src/main/java/com/jk/controller/PetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-producers/src/main/java/com/jk/mapper/PetMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-producers/src/main/java/com/jk/mapper/PetMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-producers/src/main/java/com/jk/service/PetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-producers/src/main/java/com/jk/service/PetService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-producers/src/main/java/com/jk/service/PetServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-producers/src/main/java/com/jk/service/PetServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-producers/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/pet-producers/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-producers/src/main/resources/mapper/PetMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pet-producers/src/main/resources/mapper/PetMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pet-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-web/src/main/java/com/jk/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-web/src/main/java/com/jk/controller/PageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-web/src/main/java/com/jk/controller/PetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-web/src/main/java/com/jk/controller/PetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-web/src/main/resources/templates/homePage2.html" beforeDir="false" afterPath="$PROJECT_DIR$/pet-web/src/main/resources/templates/homePage2.html" afterDir="false" />
-    </list>
+    <list default="true" id="4adf3645-b9e3-4a18-9c78-44bd72ca9200" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/eureka/target/" />
@@ -129,7 +19,7 @@
     <session id="-1235737534">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.34" value="1" />
@@ -850,12 +740,12 @@
       <workItem from="1558054865619" duration="18803000" />
       <workItem from="1558313429235" duration="27114000" />
       <workItem from="1558395299797" duration="23568000" />
-      <workItem from="1558486847490" duration="407000" />
+      <workItem from="1558486847490" duration="725000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84743000" />
+    <option name="totallyTimeSpent" value="85061000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -868,9 +758,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23726542" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23726542" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -886,7 +775,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3286119" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.26628897" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.26628897" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />

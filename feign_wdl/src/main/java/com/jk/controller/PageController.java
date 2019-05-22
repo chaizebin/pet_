@@ -28,7 +28,6 @@ public class PageController {
         return "updatelist";
     }
 
-
     //跳转到宠物资讯查询页面
     @RequestMapping("toZixun")
     public String toZixun(){
@@ -47,14 +46,15 @@ public class PageController {
     }
 
 
-
- @RequestMapping("toZXye1")
+    @RequestMapping("toZXye1")
     public String toZXye1(){
         return "zxye1";
  }
 
- @RequestMapping("toZXye2")
+    @RequestMapping("toZXye2")
     public String toZXye2(){
         return "zxye2";
  }
+
+
 }

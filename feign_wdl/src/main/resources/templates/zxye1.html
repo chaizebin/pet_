@@ -62,24 +62,34 @@ if(searchtype1==2){
 
     <div class="PetConsult-left fl">
         <h2 class="moczzx">宠族资讯</h2>
-        <a href="javascript:queryShuiZu(1)" class="czzx">热点推荐</a>
+        <a href="javascript:queryShuiZu(1)">热点推荐</a>
         <a href="javascript:queryShuiZu(2)">宠物百科</a>
         <a href="javascript:queryShuiZu(3)" >宠物救助</a>
         <a href="javascript:queryShuiZu(4)">寻宠启事</a>
     </div>
 
-    <div class="PetConsult-right fr">
-        <div class="none-name">热点推荐</div>
+    <div class="PetConsult-right fr" id="11">
+      <!-- <div class="none-name">热点推荐</div>
         <div style="display:none;">宠物百科</div>
         <div style="display:none;">宠物救助</div>
-        <div style="display:none;">寻宠启事</div>
+        <div style="display:none;">寻宠启事</div>-->
 
-        <ul class="PetConsult-list" id="rediantuijian">
+       <ul class="PetConsult-list" id="rediantuijian">
 
 
 
         </ul>
-        <!--上一页，下一页--><div class="pageno padingno">   <span class="current">1</span><a href="http://www.cz10000.com/Bk/index/catid/9/p/2.html">2</a><a href="http://www.cz10000.com/Bk/index/catid/9/p/3.html">3</a><a href="http://www.cz10000.com/Bk/index/catid/9/p/4.html">4</a><a href="http://www.cz10000.com/Bk/index/catid/9/p/5.html">5</a> <a href="http://www.cz10000.com/Bk/index/catid/9/p/2.html">下一页</a> <a href="http://www.cz10000.com/Bk/index/catid/9/p/6.html">下5页</a> <a href="http://www.cz10000.com/Bk/index/catid/9/p/61.html">最后一页</a></div></div></div><script>	$('.PetConsult-left a').hover(function() {
+        <!--上一页，下一页--><div class="pageno padingno">
+        <a href="javascript:queryZiXun('up')">上一页</a>
+        <a href="javascript:initA1('',1)">1</a>
+        <a href="javascript:initA1('',2)">2</a>
+        <a href="javascript:initA1('',3)">3</a>
+        <a href="javascript:initA1('',4)">4</a>
+        <a href="javascript:initA1('',5)">5</a>
+        <a href="javascript:queryZiXun('down')">下一页</a>
+    </div></div></div>
+<script>
+    $('.PetConsult-left a').hover(function() {
     $(this).addClass('curnt').siblings().removeClass('curnt');
 },function(){
     $(this).removeClass('curnt');
@@ -126,21 +136,49 @@ function goTop(){
 
 
 
+
  /*自己的代码*/
     $(function(){
-        initA1();
+        initA1("",1);
     })
-    
-    function queryShuiZu(typeId) {
-        initA1(typeId)
+
+  //分页
+    var page = 1;
+    function queryZiXun(temp) {
+        if(temp=='up'){
+            page--;
+            if (page<1){
+                page=1;
+            }
+        }else {
+            page++;
+        }
+        initA1('',page);
     }
-function initA1(typeId){
+    function queryShuiZu(typeId) {
+        initA1(typeId,1);
+
+    }
+
+
+  //点击二级页面（先取id，然后往二级页面传） 进入三级页面
+    function sanji(id) {
+        sessionStorage.id=id;//取id
+        location.href="http://127.0.0.1:8767/page/toZXye2";
+    }
+
+
+
+
+//二级页面展示的数据
+
+function initA1(typeId,page){
     $.ajax({
         url: "/findZixunPage",
         type: 'post',
         //dataType:'json',
         data: {
-            page: 1,
+            page: page,
             rows: 5,
             typeId:typeId
         },
@@ -151,11 +189,11 @@ function initA1(typeId){
              html+=
                  '<li class="clear">' +
                  ' <div class="imgLeft">' +
-                 ' <a href="http://www.cz10000.com/Bk/1296">' +
+                 ' <a href="javascript:sanji('+aa[i].id+')">' +
                  ' <img src='+aa[i].image+' width="150px" height="100px">' +
                  ' </a>' +
                  ' </div>' +
-                 ' <div class="textRight"><h4><a href="http://www.cz10000.com/Bk/1296">'+aa[i].title+'<a/>' +
+                 ' <div class="textRight"><h4><a href="javascript:sanji('+aa[i].id+')">'+aa[i].title+'<a/>' +
                  ' </h4>'+
                  ' <span class="MyNews-time">'+aa[i].releaseTime+'</span>' +
                  ' </div>' +
@@ -172,6 +210,10 @@ function initA1(typeId){
 
 
 
+
+
+
+//二种
 
 
 

@@ -38,8 +38,8 @@
             <select id="type1" name="typeId" class="form-control">
             </select>
 
-            <label for="titleId">图书名:<label>
-                <input type="text" id="titleId" name="title" class="form-control">
+            <label for="titleId2">图书名:</label>
+                <input type="text" id="titleId2" name="title" class="form-control">
         </div>
         <button type="button" onclick="searchZixun()" class="btn btn-info">
             <i class="glyphicon glyphicon-search"></i>
@@ -86,7 +86,7 @@
             showRefresh:true,//是否显示刷新按钮
             queryParams:function(){
                 var type=$("#type1").val();
-                var title=$("#titleId").val();
+                var title=$("#titleId2").val();
                 return {
                     page: this.pageNumber,
                     rows: this.pageSize,

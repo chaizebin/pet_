@@ -1,6 +1,8 @@
 package com.jk.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.jk.model.Classification;
+import com.jk.model.OtherBean;
 import com.jk.service.PetService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -26,4 +28,11 @@ public class PetController {
          list=petService.queryClassificationById(pid);
         return list;
     }
+    @RequestMapping("queryOrderForPage")
+    @ResponseBody
+    public JSONObject queryOrderForPage(OtherBean otherBean){
+        return petService.queryOrderForPage(otherBean);
+
+    }
+
 }

@@ -44,6 +44,11 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>1.2.5</version>
+        </dependency>
         <!--<dependency>
             <groupId>com.jk</groupId>
             <artifactId>common</artifactId>
@@ -53,6 +58,11 @@
             <groupId>com.jk</groupId>
             <artifactId>pet-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github</groupId>
+            <artifactId>pagehelper</artifactId>
         </dependency>
     </dependencies>
 

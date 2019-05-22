@@ -11,4 +11,8 @@ public class PageController {
     public String goHomePage(){
         return "homePage2";
     }
+    @RequestMapping("goOther")
+    public String goOther(){
+        return "other";
+    }
 }

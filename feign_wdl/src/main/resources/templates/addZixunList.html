@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/js/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css">
+    <script src="/js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <script src="/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+
+    <script src="/js/bootstrap-fileinput/js/fileinput.js"></script>
+    <script src="/js/bootstrap-fileinput/js/locales/zh.js"></script>
+    <link rel="stylesheet" href="/js/bootstrap-fileinput/css/fileinput.css">
+</head>
+<body>
+<div class="container-fluid">
+    <form action="from-horizontal" id="zixunForm" method="post">
+        <div class="form-group">
+            <label for="titleId" class="col-sm-2 control-label">标题</label>
+            <div class="col-sm-4">
+                <input type="text" id="titleId" name="title" class="form-control">
+            </div>
+            <label for="contentId" class="col-sm-2 control-label">内容</label>
+            <div class="col-sm-4">
+                <input type="text" id="contentId" name="content" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="type" class="col-sm-2 control-label">资讯类型</label>
+            <div class="col-sm-4">
+                <select class="form-control" id="type" name="typeId">
+
+                </select>
+            </div>
+            <label for="releaseTimeId" class="col-sm-2 control-label">发布时间</label>
+            <div class="col-sm-4">
+                <input type="text" id="releaseTimeId" name="releaseTime" class="form-control date">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="storyImg">商品图片:</label>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <input type="hidden" id="headImg" name="image" />
+                <input type="file" class="projectfile" multiple accept="image/*" name="img" id="storyImg">
+            </div>
+        </div>
+    </form>
+</div>
+
+</body>
+<script>
+    $(function () {
+        initTypeSelect();
+        initFile();
+    })
+    //时间
+    $('.date').datetimepicker({
+        language: 'zh-CN',//显示中文
+        format: 'yyyy-mm-dd hh:ii:ss',//显示格式
+        minView: "month",//设置只显示到月份
+        initialDate: new Date(),//初始化当前日期
+        autoclose: true,//选中自动关闭
+        todayBtn: true//显示今日按钮
+    });
+
+
+    //oss上传图片
+    function initFile() {
+        $('#storyImg').fileinput({
+            language: 'zh', //设置语言
+            uploadUrl: '/updaloadImg', //上传的地址
+            allowedFileExtensions: ['jpg', 'gif', 'png'],//接收的文件后缀
+            showUpload: true, //是否显示上传按钮
+            showCaption: false,//是否显示标题
+            browseClass: "btn btn-primary", //按钮样式
+            //dropZoneEnabled: false,//是否显示拖拽区域
+            //minImageWidth: 50, //图片的最小宽度
+            //minImageHeight: 50,//图片的最小高度
+            //maxImageWidth: 1000,//图片的最大宽度
+            //maxImageHeight: 1000,//图片的最大高度
+            //maxFileSize: 0,//单位为kb，如果为0表示不限制文件大小
+            //minFileCount: 0,
+            maxFileCount: 1, //表示允许同时上传的最大文件个数
+            enctype: 'multipart/form-data',
+            validateInitialCount:true,
+            /* initialPreview:data,
+             //初始化图片配置：
+             initialPreviewConfig: [
+                 {key: 1, showDelete: false}
+             ],
+             //是否初始化图片显示
+             initialPreviewAsData: true,*/
+            previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+            msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！",
+        }).on('fileuploaded', function(event, data, previewId, index) {
+            var imgval = $('#headImg').val();
+            if(imgval == null || imgval == "" || imgval == undefined){
+                imgval = data.response;
+            }/*else{
+				imgval += ","+"http://<%= request.getServerName()%>:<%=request.getServerPort()%><%=request.getContextPath()%>/"+data.response;
+			}*/
+            $('#headImg').val(imgval);
+        });
+    }
+
+</script>
+</html>

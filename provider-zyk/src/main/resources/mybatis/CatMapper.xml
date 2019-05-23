@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jk.dao.CatDao">
+    <insert id="saveCat">
+		INSERT INTO t_cat (
+			catName,
+			catPrice,
+			baoYou,
+			faHuoDi,
+			xiaoLiang,
+			kuCun,
+			dianPuId,
+			catImg
+		)
+		VALUES
+			(
+				#{catName},
+				${catPrice},
+				#{baoYou},
+				#{faHuoDi},
+				${xiaoLiang},
+				${kuCun},
+				${dianPuId},
+				#{catImg}
+			)
+    </insert>
+    <update id="updateCat">
+		UPDATE t_cat
+		SET catName = #{catName},catPrice = ${catPrice},baoYou = #{baoYou},faHuoDi = #{faHuoDi},xiaoLiang = #{xiaoLiang},kuCun = #{kuCun},catImg = #{catImg}
+		WHERE catId = #{catId}
+    </update>
+
+    <select id="queryCatForPage" resultType="com.jk.model.Cat">
+        select * from t_cat c
+        <where>
+			<if test="catName != '' and catName != null ">
+				and c.catName like '%${catName}%'
+			</if>
+		</where>
+    </select>
+</mapper>

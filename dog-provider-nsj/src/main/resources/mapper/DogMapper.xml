@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jk.dao.DogDao">
+    <select id="queryDogCount" resultType="int" parameterType="com.jk.model.DogBean">
+        select count(1) from t_dog td
+        <include refid="dogWhere"></include>
+    </select>
+
+    <select id="queryDogList" resultType="com.jk.model.DogBean">
+        select td.dogid,td.dogName,td.baoyou,td.xiaoliang,td.kucun,td.weidao,td.dianpuid,td.dogprice,td.areaname,td.chanpinid,td.baozhiqi,td.xinghao from t_dog td
+        <include refid="dogWhere"></include>
+        limit #{start},#{rows}
+    </select>
+
+  <sql id="dogWhere">
+      <where>
+          <if test="dogBean.dogName != null and dogBean.dogName != ''">
+              and td.dogName like '%${dogBean.dogName}%'
+          </if>
+      </where>
+  </sql>
+
+    <delete id="delDogById" parameterType="int">
+        delete from t_dog where dogId in
+          <foreach collection="array" item="aaa" separator="," open="(" close=")">
+              #{aaa}
+          </foreach>
+    </delete>
+</mapper>
+

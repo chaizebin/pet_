@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/bootstrap3/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../js/bootstrap3/css/bootstrap.css">
+    <script src="../js/bootstrap-treeview/bootstrap-treeview.min.js"></script>
+    <link rel="stylesheet" href="../js/bootstrap-treeview/bootstrap-treeview.min.css">
+    <script src="../js/bootStrap-addTabs/bootstrap.addtabs.min.js"></script>
+    <link rel="stylesheet" href="../js/bootStrap-addTabs/bootstrap.addtabs.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href=""></a>
+        </div>
+        <div  style="text-align:center">
+            <a class="navbar-brand pull-right">
+
+            </a>
+            <!--<button type="button" onclick="zhuxiao()" class="pull-right btn btn-danger glyphicon glyphicon-off">注销</button>-->
+        </div>
+    </div>
+</nav>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 col-sm-2 col-xs-2">
+            <div id="myTree"></div>
+        </div>
+        <div class="col-md-10 col-sm-10 col-xs-10">
+            <div id="myTabs">
+                <!-- 新选项卡 -->
+                <ul class="nav nav-tabs" id="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#home" role="tab" data-toggle="tab">欢迎</a>
+                    </li>
+                </ul>
+
+                <!-- 选项卡下内容 -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="home">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+
+    $(function(){
+        initTree()
+    })
+
+    /*function zhuxiao(){
+        window.location.href="/logout"
+    }*/
+
+    function initTree(){
+        $.ajax({
+            url:'/findPowerList',
+            type:'get',
+            data:{},
+            dataType:'json',
+            success:function(data){
+                $("#myTree").treeview({
+                    data:data,
+                    onNodeSelected:function(event,node){
+                        $.addtabs({iframeHeight: $(window).height()-120});
+                        $.addtabs.add({
+                            id:node.id,
+                            title:node.text,
+                            url:node.href
+                        });
+                    }
+                })
+            }
+        })
+    }
+
+</script>
+</html>

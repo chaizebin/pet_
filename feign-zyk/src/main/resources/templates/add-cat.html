@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    $(function () {
+        queryRegion("provinceId",0);
+        initFile("");
+    })
+
+    function initFile(data) {
+        $('#storyImg').fileinput({
+            language: 'zh', //设置语言
+            uploadUrl: '/cat/updaloadImg', //上传的地址
+            allowedFileExtensions: ['jpg', 'gif', 'png'],//接收的文件后缀
+            showUpload: true, //是否显示上传按钮
+            showCaption: false,//是否显示标题
+            browseClass: "btn btn-primary", //按钮样式
+            //dropZoneEnabled: false,//是否显示拖拽区域
+            //minImageWidth: 50, //图片的最小宽度
+            //minImageHeight: 50,//图片的最小高度
+            //maxImageWidth: 1000,//图片的最大宽度
+            //maxImageHeight: 1000,//图片的最大高度
+            //maxFileSize: 0,//单位为kb，如果为0表示不限制文件大小
+            //minFileCount: 0,
+            maxFileCount: 1, //表示允许同时上传的最大文件个数
+            enctype: 'multipart/form-data',
+            validateInitialCount:true,
+            initialPreview:data,
+            //初始化图片配置：
+            initialPreviewConfig: [
+                {key: 1, showDelete: false}
+            ],
+            //是否初始化图片显示
+            initialPreviewAsData: true,
+            previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+            msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！",
+        }).on('fileuploaded', function(event, data, previewId, index) {
+            var imgval = $('#headImg').val();
+            if(imgval == null || imgval == "" || imgval == undefined){
+                imgval = data.response;
+            }/*else{
+				imgval += ","+"http://<%= request.getServerName()%>:<%=request.getServerPort()%><%=request.getContextPath()%>/"+data.response;
+			}*/
+            $('#catImg').val(imgval);
+        });
+    }
+
+</script>
+<body>
+<form id="catForm" class="text-right">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="catName">商品名称:</label>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <input type="hidden" name="catId" id="catId">
+            <input type="text" class="form-control" name="catName" id="catName1" placeholder="请输入商品名称...">
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="catPrice">商品价格:</label>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <input type="text" class="form-control" name="catPrice" id="catPrice" placeholder="请输入商品价格...">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="falseId">是否包邮:</label>
+            </div>
+        </div>
+        <div class="col-md-4" style="text-align: left">
+            <input type="radio" name="baoYou" id="falseId" value="是">是
+            <input type="radio" name="baoYou" value="否" id="trueId">否
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="xiaoLiang">商品销量:</label>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <input type="text" class="form-control" name="xiaoLiang" id="xiaoLiang" placeholder="请输入商品销量...">
+        </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="kuCun">商品库存:</label>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <input type="text" class="form-control" name="kuCun" id="kuCun">
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="faHuoDi">发货地:</label>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <input type="text" class="form-control" name="faHuoDi" id="faHuoDi">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="storyImg">商品图片:</label>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <input type="hidden" id="catImg" name="catImg">
+            <input type="file" class="projectfile" multiple accept="image/*" name="img" id="storyImg">
+        </div>
+    </div>
+</form>
+
+</body>
+</html>

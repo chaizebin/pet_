@@ -1,0 +1,21 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: provider-zyk
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://192.168.1.104:3306/pet?serverTimezone=Hongkong&useUnicode=true&characterEncoding=utf-8
+mybatis:
+  mapper-locations: classpath:mybatis/*.xml
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql

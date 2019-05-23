@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1">
+    <title>欢迎登录-宠族网</title>
+    <script src="/petjs/html5shiv.js" type="text/javascript"></script>
+    <script src="/petjs/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="/petjs/public.js" type="text/javascript"></script>
+    <script src="/petjs/wxLogin.js"></script>
+    <link href="/petjs/base.css" rel="stylesheet">
+    <link href="/petjs/login.css" rel="stylesheet">
+</head>
+<body>
+<div class="grid" id="login-header">
+    <div class="login-log">
+        <a href="/Index/index"><img src="/petjs/logo.png"></a>
+        <span class="login-name">欢迎登录</span>
+    </div>
+</div>
+<div id="login-wraper" style="background: url(http://www.cz10000.com/Tpl/public/images/img/login-bg.jpg)">
+    <div class="login-main grid">
+        <div class="login-main-left fl"><h3 class="l_slogn">爱它就给它最好的</h3>
+            <p class="l_p">宠族 — 专注于宠物行业的电商服务平台</p></div>
+        <div class="login-main-right fr">
+            <div class="login-tab">
+                <ul class="l_tab">
+                    <li class="cur">账号登录</li>
+                    <li>手机号快捷登录</li>
+                </ul>
+                <form name="fom" id="fom" method="post">
+                    <div class="l_main  on">
+                        <div class="fp_input login_name"><span class="fp_user_bg"></span>
+                            <input name="account" id="account" type="text" placeholder="请输入手机号/账号"><i></i>
+                            <div class="fp_error clearfix" style="display:none"><em>*</em>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="fp_input login_mima">
+                            <span class="fp_psd_bg">
+                            </span>
+                            <input name="password" id="password" type="password" maxlength="20" placeholder="请输入密码">
+                        </div>
+                        <div class="suc-grid">
+                            <img src="/petjs/error.png">
+                            <em class="font">验证码错误，请重新输入</em>
+                        </div>
+                        <div class="login_auto">
+                            <!--<a class="login_auto_btn active" id="accept" href="javascript:;">自动登录</a>-->
+                           <!-- <a class="login_forget" href="/Login/getPwd">忘记密码</a>-->
+                        </div>
+                        <div class="reg_true">
+                            <a class="fp_btn" id="checklogin" onclick="check();" href="javascript:;">
+                                登录</a>
+                        </div>
+                        <div class="login_weChat">
+                            <!--<a class="login_wx" onclick="Wx();" href="javascript:;">微信登录</a>-->
+                            <a class="login_register" href="/topetReg">注册账号</a>
+                        </div>
+                    </div>
+                </form>
+                <form name="form" id="form"  method="post">
+                    <div class="l_main">
+                        <div class="fp_input login_mima">
+                            <input id="phone" name="phone" class="l_phone" type="text" maxlength="11" placeholder="请输入手机号">
+                        </div>
+                        <div class="fp_input login_mima">
+                            <input id="code" name="code" class="l_sms"  type="text"  maxlength="6" placeholder="短信验证码">
+                            <a class="fl" id="getCode" onclick="getcode(this);" href="javascript:;">获取短信验证码</a>
+                        </div>
+                        <div class="suc-grid">
+                            <img src="/petjs/error.png">
+                            <em class="font">验证码错误，请重新输入</em>
+                        </div>
+                        <div class="login_auto">
+
+                        </div>
+                        <div class="reg_true">
+                            <a class="fp_btn" id="numberlogin" onclick="checkNumber();"
+                                                 href="javascript:;">登 录</a></div>
+                        <div class="login_weChat">
+
+                            <a class="login_register" href="/topetReg">注册账号</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="wx" id="wxlogin_qrcode" style="display:none;"></div>
+    <style type="text/css">            .wx {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: fixed;
+        background: rgba(0, 0, 0, .65);
+        display: none;
+    }
+
+    .payPop-content {
+        width: 220px;
+        height: 340px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -110px;
+        margin-top: -170px;
+    }
+
+    .payPop-content img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .impowerBox {
+        margin-top: 200px
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        margin-top: 200px;
+    }
+    </style>
+</div>
+<script type="text/javascript">
+    function check() {
+    if ($("input[name='account']").val() == '') {
+        err('account', '请输入用户名', '');
+        return false;
+    }
+    if ($("input[name='password']").val() == '') {
+        err('password', '请输入密码', '');
+        return false;
+    }
+
+    var prevLink = document.referrer;
+    // console.log(prevLink);
+    // message(prevLink);
+    $.ajax({
+        url: '/petLogin',
+        type: 'post',
+        dataType: 'json',
+        data: $('#fom').serialize(),
+        beforeSend: function () {
+            $("#checklogin").removeAttr('onclick');
+            $("#checklogin").html("登录中,请稍后...");
+            suc('checklogin', '登录信息完整', '1');
+        },
+        success: function (data) {
+            if(data.code != 0){
+                alert(data.msg)
+            }else {
+                alert(data.msg);
+                location.href="/topower"
+            }
+        },
+        complete: function () {
+            $("#checklogin").html("登录");
+            $("#checklogin").attr('onclick', 'check();');
+        }
+    });
+    // document.fom.submit();
+}
+
+function checkNumber() {
+    if ($("input[name='phone']").val() == '') {
+        err('phone', '请输入手机号', '');
+        return false;
+    }
+    if (!$("input[name='phone']").val().match(/^1[34578]\d{9}$/)) {
+        err('phone', '手机号码格式不正确！', '');
+        return false;
+    }
+
+    if ($("input[name='code']").val() == '') {
+        err('smscode', '请输入短信验证码', '');
+        return false;
+    }
+
+    var prevLink = document.referrer;
+
+    var  phone=$("#phone").val();
+    var  code=$("#code").val();
+    $.ajax({
+        url:"/quicklogin",
+        type:"post",
+        data:{
+            phone:phone,
+            code:code
+        },
+        success:function (data) {
+            alert(data)
+            if (data=="登录成功"){
+                location.href="/topower";
+            }else{
+                alert("登陆失败，请检查手机号和验证码是否有误")
+            }
+        }
+    })
+    // document.form.submit();
+}
+
+var i = 60;
+var end;
+
+function show_msg() {
+    i--;
+    $('#getCode').text(i + '秒后重发');
+    $('#getCode').attr('onclick', '');
+    if (i <= 0) {
+        $('#getCode').attr('onclick', "getcode()");
+        i = 60;
+        $('#getCode').text('获取短信验证码');
+        window.clearInterval(end);
+    }
+}
+
+function send() {
+    end = window.setInterval("show_msg()", 1000);
+}
+
+function getcode() {
+    var phone = $("input[name='phone']").val();
+    if (phone == '') {
+        err('phone', '请输入手机号', '');
+        return false;
+    }
+    if (!phone.match(/^1[34578]\d{9}$/)) {
+        err('phone', '手机号码格式不正确！', '');
+        return false;
+    }
+
+    $('#getCode').removeAttr('onClick');
+    $.ajax({
+        url:'/findDuanXin',
+        type:'post',
+        data:{
+            phone:phone
+        },
+        dataType:'json',
+        success:function(data){
+            if(data == "验证码发送失败！"){
+                alert("验证码发送失败！")
+            }else {
+                countdown = 60;
+                setInterval(time,1000)
+                alert("发送验证码成功")
+            }
+        }
+    })
+}
+
+    //倒计时
+    var time =function djs(){
+        $("#findSmsCodeBtn").prop("onclick",null);
+        $("#findSmsCodeBtn").linkbutton({text:"重新发送("+countdown+")秒"});
+        countdown--;
+        if(countdown <=0 ){
+            $("#findSmsCodeBtn").linkbutton({text:"获取验证码"});
+            $("#findSmsCodeBtn").bind("click",function(){
+                findSmsCode();
+            });
+            clearInterval(time);
+        }
+    }
+
+
+    function suc(obj, content, type) {
+    if (type == '') {
+        var _this = $("input[name='" + obj + "']");
+    } else {
+        var _this = $("#" + obj);
+    }
+    _this.parent().siblings('.suc-grid').find('em').html(content).css({'color': 'green'});
+    _this.parent().siblings('.suc-grid').find('img').attr('src', '/petjs/suc.png');
+    _this.parent().siblings('.suc-grid').show();
+    // _this.parent().siblings('.suc-grid').hide();
+    _this.css({'border-color': '#efefef'});
+}
+
+function err(obj, content, type) {
+    if (type == '') {
+        var _this = $("input[name='" + obj + "']");
+    } else {
+        var _this = $("#" + obj);
+    }
+    _this.parent().siblings('.suc-grid').find('em').html(content).css({'color': '#e70416'});
+    _this.parent().siblings('.suc-grid').find('img').attr('src', '/petjs/error.png');
+    _this.parent().siblings('.suc-grid').show();
+    _this.focus().css({'border-color': '#e60012'});
+}
+
+
+</script>
+<div class="home-honer mt60">
+    <div class="grid clear">
+        <ul>
+            <li class="honer honer1"><p>品质保障 种类齐全</p></li>
+            <li class="honer honer2"><p>七天退换 售后无忧</p></li>
+            <li class="honer honer3"><p>精致服务 宠友信赖</p></li>
+            <li class="honer honer4"><p>天天特价 嗨购全场</p></li>
+        </ul>
+    </div>
+</div>
+<div class="fotter">
+    <div class="grid"><p>2015-2017 cz10000.com 版权所有 京ICP备15063352号 北京宠族网络科技有限公司</p>
+        <div class="cnzz">
+            <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+            document.write(unescape("%3Cspan id='cnzz_stat_icon_1263419271'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263419271%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+            <span id="cnzz_stat_icon_1263419271"><a title="站长统计"
+                                                    href="https://www.cnzz.com/stat/website.php?web_id=1263419271"
+                                                    target="_blank"><img src="/petjs/pic1.gif"
+                                                                         border="0" vspace="0" hspace="0"></a></span>
+            <script src=" http://s19.cnzz.com/z_stat.php?id=1263419271&amp;show=pic1" type="text/javascript"></script>
+            <script src="http://c.cnzz.com/core.php?web_id=1263419271&amp;show=pic1&amp;t=z" type="text/javascript"
+                    charset="utf-8"></script>
+        </div>
+    </div>
+</div>
+<div class="home-auth mt6">
+    <div class="grid1 clear">
+        <ul>
+            <li class="auth auth1"></li>
+            <li class="auth auth2"></li>
+            <li class="auth auth3"></li>
+            <li class="auth auth4"></li>
+            <li class="auth auth5"></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

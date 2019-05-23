@@ -1,0 +1,25 @@
+.helpMe{ margin-top: 20px; padding-bottom: 20px;}
+.helpMe-left{ width: 187px; border: 1px solid #efefef; float: left; padding-bottom: 15px;}
+.helpMe-left .czzx{ height: 40px; line-height: 40px; color: #252525; margin-bottom: 24px; text-align: center; font-size: 16px; background: #f8f8f8;}
+.helpMe-nav{ height: 46px; line-height: 46px; font-size: 16px; color: #ff5500;}
+.helpMe-nav a{color: #252525;}
+.helpMe-right{ float: right; width: 985px;} 
+.text-content { padding-left: 64px; padding-right: 40px;}
+.text-content h5{ font-size: 18px; color: #252525; text-align: center; margin-bottom: 40px; text-align: center;}
+.text-content .ptsm{ display: block; font-size: 14px; color: #252525; line-height: 24px;}
+.text-content .cz-nrsm{font-size: 14px; color: #252525; line-height: 24px; margin-bottom: 25px;}
+.text-content .cz-nrsm span{ display: block;}
+
+
+
+.menu_head{height:26px;/*line-height:36px;*/margin-top:10px;font-size:16px;color:#252525;cursor:pointer;position:relative; margin-left: 40px; padding-left:18px;background:url(../images/img/pro_left.png) no-repeat left center}
+.menu_list .current{background:url(../images/img/pro_down.png) no-repeat left center; color:#ff5500;margin-top:10px;}
+
+.menu_body{line-height:26px; margin-left: 44px;}
+.menu_body a{margin-top:5px;}
+.menu_body a{display:block;height:20px;line-height:20px;padding-left:16px;width: 120px;overflow: hidden;font-size:14px;color:#252525;text-decoration:none; background: url(../images/img/helpMe-icon.jpg) no-repeat left center;}
+.menu_body a.active{color: #ff5500;}
+.menu_body a:hover{text-decoration:none;}
+
+
+

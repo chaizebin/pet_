@@ -5,6 +5,9 @@
       <module name="common" target="1.8" />
       <module name="eureka" target="1.8" />
       <module name="feign_wdl" target="1.8" />
+      <module name="pet-api" target="1.8" />
+      <module name="pet-producers" target="1.8" />
+      <module name="pet-web" target="1.8" />
       <module name="pet_" target="1.5" />
       <module name="provider_wdl" target="1.8" />
     </bytecodeTargetLevel>

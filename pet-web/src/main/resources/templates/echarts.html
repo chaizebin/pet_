@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+<!--    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/echarts/echarts.js"></script>-->
+    <script src="/homePage2_files/js/echarts/echarts.js"></script>
+
+    <script src="/homePage2_files/js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+<div id="main" style="width: 600px;height:400px;"></div>
+</body>
+<script type="text/javascript">
+    $(function(){
+        initShopList();
+    })
+    function initShopList() {
+        $.ajax({
+          url:"/echarts/query",
+          type:"post",
+          success:function(data) {
+              //alert(data);
+              myChart.setOption({
+                  xAxis:{
+                      data:data.name
+                  },
+                  series:{
+                      data:data.sales
+                  }
+              })
+          },
+          error:function(){
+            alert("")
+          }
+        })
+    }
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+    // 指定图表的配置项和数据
+    var option = {
+        title: {
+            text: 'ECharts 入门示例'
+        },
+        tooltip: {},
+        legend: {
+            data:['销量']
+        },
+        toolbox: {
+            show: true,
+            feature: {
+                dataZoom: {
+                    yAxisIndex: 'none'
+                },
+                dataView: {readOnly: false},
+                magicType: {type: ['line', 'bar']},
+                restore: {},
+                saveAsImage: {}
+            }
+        },
+        xAxis: {
+            data: []
+        },
+        yAxis: {},
+        series: [{
+            name: '销量',
+            type: 'bar',
+            data: []
+        }]
+    };
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+
+
+
+
+</script>
+</html>

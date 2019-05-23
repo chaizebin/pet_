@@ -252,6 +252,7 @@
 				<div class="cw-list">
 					<div class="dd">
 						<ul class="dd-inner bigClass">
+
 							</ul></div></div>
 				<div class="cw-core">
 					<div class="banner_main">
@@ -437,11 +438,11 @@
 	   }); 
 
 	// 二级菜单submenu
-		//$(".view").mouseover(function(e) {
-			//$(this).addClass('on').siblings().removeClass('on');
-		//}).mouseout(function(e){
-			//$(this).removeClass('on');
-		//})
+		$(".view").mouseover(function(e) {
+			$(this).addClass('on').siblings().removeClass('on');
+		}).mouseout(function(e){
+			$(this).removeClass('on');
+		})
 
 	     var offset = $("#end").offset()
     $(".addcar").click(function(event){

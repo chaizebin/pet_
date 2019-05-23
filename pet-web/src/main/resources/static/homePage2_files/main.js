@@ -1,3 +1,8 @@
+$(function () {
+    initType(0);
+    changeClass(0);
+    initTypeTwo(0);
+})
 $(document).ready(function(){
 	//鼠标的移入移出  
 	(function (){
@@ -153,7 +158,65 @@ function message2(content) {
             $(this).remove();
         });
     }
-}	
+}
+/*function changeClass(pid){
+
+    $("#li"+pid).removeClass("lihover")
+
+}
+function initTypeTwo(pid){
+    $("#li"+pid).addClass("orange")
+    $.ajax({
+        url:'http://127.0.0.1:8010/pet/queryGoodsById',
+        type:'get',
+        data:{pid:pid},
+        dataType:'json',
+        success:function(data){
+            alert(data)
+            var html="";
+            for(var i=0;i<data.length;i++){
+                var list = data[i].nodes
+                html+='<dl class=".fore1">'+
+                    '<dt><a href="#">'+data[i].text+'</a></dt>'+
+                    '<dd>';
+                if( list != null){
+                    for(var j=0;j < list.length;j++){
+                        html+='<a href="#">'+list[j].text+'</a>';
+                    }
+                }
+
+                html+="</dd></dl>";
+            }
+
+            $("#first"+pid).html(html)
+        }
+    })
+}
+function initType(pid){
+
+    $.ajax({
+        url:'http://127.0.0.1:8010/pet/queryGoodsById',
+        type:'GET',
+        data:{pid:pid},
+        dataType:'json',
+        success:function(data){
+            alert(data);
+            var html="";
+            for(var i=0;i<data.length;i++){
+                html+='<li style="height:50px;line-height: 50px;" class="item" id="li'+data[i].id+'" onmouseout="initTypeTwo('+data[i].id+')" onmouseout="changeClass('+data[i].id+')"><a href="#" class="visited" target="_blank">'+'<i class="dog1">'+'</i>'+'<span>'+data[i].text+'</span>'+'<b>'+'</b>'+'</a>'+
+                    '<div style="display: none;" class=".index_menus_sub">'+
+                    '<div class=".clear">'+
+                    '<div class=".fl" id="first'+data[i].id+'">'+
+                    '</div>'+
+                    '</div>'+
+                    '</div>'+
+                    '</li>';
+            }
+
+            $("#bigClass").append(html)
+        }
+    })
+}*/
 
 
 

@@ -81,5 +81,11 @@ select * from drug_shoppingInfo
     <select id="queryOrderForPage" resultType="com.jk.model.OtherBean">
       select * from t_other
     </select>
+    <select id="findTreeByPid" resultType="com.jk.model.TreeBean">
+        select * from t_power where pid=#{pid}
+    </select>
+    <select id="query" resultType="com.jk.model.EchartsBean">
+      select * from echarts
+    </select>
 </mapper>
     

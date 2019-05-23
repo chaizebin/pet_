@@ -3,7 +3,9 @@ package com.jk.controller;
 import com.alibaba.fastjson.JSONObject;
 import com.jk.CommonApplication;
 import com.jk.model.Classification;
+import com.jk.model.EchartsBean;
 import com.jk.model.OtherBean;
+import com.jk.model.TreeBean;
 import com.jk.service.PetService;
 import com.jk.service.PetServiceApi;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,6 +35,18 @@ public class PetController implements PetServiceApi{
         return petService.queryOrderForPage(otherBean);
 
 
+    }
+    @GetMapping("queryTree")
+    @Override
+    @ResponseBody
+    public List<TreeBean> queryTree() {
+        return petService.queryTree();
+    }
+    @RequestMapping("query")
+    @Override
+    @ResponseBody
+    public List<EchartsBean> query() {
+        return petService.query();
     }
 
 

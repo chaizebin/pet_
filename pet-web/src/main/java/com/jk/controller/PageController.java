@@ -9,10 +9,14 @@ public class PageController {
 
     @RequestMapping("goHomePage")
     public String goHomePage(){
-        return "homePage2";
+        return "homePage";
     }
     @RequestMapping("goOther")
     public String goOther(){
         return "other";
+    }
+    @RequestMapping("goEchart")
+    public String goEchart(){
+        return "echarts";
     }
 }

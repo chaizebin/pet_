@@ -5,7 +5,9 @@ import com.github.pagehelper.PageHelper;
 import com.jk.CommonApplication;
 import com.jk.mapper.PetMapper;
 import com.jk.model.Classification;
+import com.jk.model.EchartsBean;
 import com.jk.model.OtherBean;
+import com.jk.model.TreeBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -43,6 +45,33 @@ public class PetServiceImpl implements PetService{
         jsonObject.put("total",total.size());
         jsonObject.put("rows",otherList);
         return jsonObject;
+    }
+
+    @Override
+    public List<TreeBean> queryTree() {
+        int pid=0;
+        List<TreeBean> list=findNodes(pid);
+        return list;
+    }
+
+    @Override
+    public List<EchartsBean> query() {
+        return petMapper.query();
+    }
+
+    private List<TreeBean> findNodes(int pid) {
+        List<TreeBean> list=petMapper.findTreeByPid(pid);
+        for (TreeBean tree: list) {
+            Integer id = tree.getId();
+            List<TreeBean> nodes = findNodes(id);
+            if(nodes.size()<=0){
+                tree.setSelectable(true);
+            }else {
+                tree.setSelectable(false);
+                tree.setNodes(nodes);
+            }
+        }
+        return list;
     }
 
 

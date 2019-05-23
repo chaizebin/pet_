@@ -1,25 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <annotationProcessing>
-      <profile name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="common" />
-        <module name="eureka" />
-        <module name="pet-api" />
-        <module name="pet-producers" />
-        <module name="pet-web" />
-        <module name="pet_" />
-        <module name="springcloud_pet" />
-      </profile>
-    </annotationProcessing>
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="common" options="" />
-      <module name="eureka" options="" />
-    </option>
+    <bytecodeTargetLevel>
+      <module name="common" target="1.8" />
+      <module name="eureka" target="1.8" />
+      <module name="pet-api" target="1.8" />
+      <module name="pet-producers" target="1.8" />
+      <module name="pet-web" target="1.8" />
+      <module name="pet_" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
